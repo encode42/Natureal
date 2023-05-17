@@ -1,5 +1,5 @@
 # Natureal
-### ˈneɪʧəriːul
+### ˈneɪʧərːiul
 
 A content mod pack based on the concept of nature.
 
