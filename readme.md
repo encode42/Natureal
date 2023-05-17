@@ -5,6 +5,8 @@ A content mod pack based on the concept of nature.
 
 Designed to be played with friends via a dedicated server.
 
+Gallery images and related will be uploaded when they're made. It's too early for them yet!
+
 Still *very* early in development. Do not use unless I gave you the link to this project! 
 
 ### ❔ FAQ
