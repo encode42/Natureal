@@ -1,0 +1,16 @@
+{
+  "useCampfireSmoke": true,
+  "dontEatEnchantedItems": true,
+  "playerViewIsLocked": false,
+  "maxViewAngle": 90,
+  "furnaceMinecartSpeed": 30.0,
+  "otherMinecartSpeed": 8.0,
+  "maxSpeedAroundTurns": 8.0,
+  "minecartDamage": 0.0,
+  "furnaceMaxBurnTime": 72000,
+  "canLinkMinecarts": true,
+  "shouldPoweredRailsStopFurnace": true,
+  "furnacesCanUseAllFuels": false,
+  "furnaceMinecartsLoadChunks": false,
+  "toolsHarvestBlockMinecarts": true
+}

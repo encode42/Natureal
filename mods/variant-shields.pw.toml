@@ -1,0 +1,13 @@
+name = "Variant Shields"
+filename = "variant_shields-1.0.3.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/AIdngUE7/versions/4x0vsoT5/variant_shields-1.0.3.jar"
+hash-format = "sha1"
+hash = "27e153acb7f27285387be3476c58e6d728204ff0"
+
+[update]
+[update.modrinth]
+mod-id = "AIdngUE7"
+version = "4x0vsoT5"

@@ -1,0 +1,13 @@
+name = "Capitalisation Fixes"
+filename = "Capitalisation-Fixes-v2.18-1.19.2.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/JdXoJZy7/versions/3YrL6UG1/Capitalisation-Fixes-v2.18-1.19.2.zip"
+hash-format = "sha1"
+hash = "0d7e0903086fe3c027768c60761abdc30f7f25d8"
+
+[update]
+[update.modrinth]
+mod-id = "JdXoJZy7"
+version = "3YrL6UG1"

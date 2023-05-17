@@ -1,0 +1,13 @@
+name = "Goodall"
+filename = "goodall-1.2.0-fabric.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/koiNUJ8V/versions/sVmTTxpz/goodall-1.2.0-fabric.jar"
+hash-format = "sha1"
+hash = "583a241f3ee8be0bf3d1fe1e34c8797055e5a290"
+
+[update]
+[update.modrinth]
+mod-id = "koiNUJ8V"
+version = "sVmTTxpz"

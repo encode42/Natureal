@@ -1,0 +1,13 @@
+name = "Village Spawn Point"
+filename = "villagespawnpoint-1.19.2-4.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/KplTt9Ku/versions/pvqQ0iaa/villagespawnpoint-1.19.2-4.0.jar"
+hash-format = "sha1"
+hash = "d2250361e516d16b59dafdae9e6444d8ee68b26d"
+
+[update]
+[update.modrinth]
+mod-id = "KplTt9Ku"
+version = "pvqQ0iaa"

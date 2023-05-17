@@ -1,0 +1,13 @@
+name = "Piercing Paxels"
+filename = "piercing-paxels-1.0.7.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/gHkzYDn7/versions/ASaLtLbt/piercing-paxels-1.0.7.jar"
+hash-format = "sha1"
+hash = "6eb5c0edf24a46cdff475502e5cd39634a3bcfd1"
+
+[update]
+[update.modrinth]
+mod-id = "gHkzYDn7"
+version = "ASaLtLbt"

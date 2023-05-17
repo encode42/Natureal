@@ -1,0 +1,92 @@
+# LambDynamicLights configuration.
+# The dynamic lights mode
+mode = "fancy"
+
+# Light sources settings.
+[light_sources]
+	# Enable entities light source.
+	entities = true
+	# Enable first-person player light source.
+	self = true
+	# Enable block entities light source.
+	block_entities = true
+	# Enables water-sensitive light sources check. This means that water-sensitive items will not light up when submerged in water.
+	water_sensitive_check = true
+	# Creeper lighting mode. May be off, simple or fancy.
+	creeper = "simple"
+	# TNT lighting mode. May be off, simple or fancy.
+	tnt = "simple"
+
+	[light_sources.settings]
+
+		[light_sources.settings.entities]
+
+			[light_sources.settings.entities.minecraft]
+				glow_item_frame = false
+				player = true
+				cat = true
+				cow = true
+				sheep = true
+				tnt_minecart = true
+				chicken = true
+				zombie_villager = true
+				skeleton = true
+				bat = true
+				spider = true
+				item = true
+				creeper = true
+				zombie = true
+				enderman = true
+				horse = true
+				glow_squid = true
+				pig = true
+				rabbit = true
+				wolf = true
+				witch = true
+				stray = true
+				bee = true
+				goat = true
+				armor_stand = true
+				fox = true
+				experience_orb = true
+				polar_bear = true
+				silverfish = true
+				axolotl = true
+				tropical_fish = true
+				chest_minecart = true
+				squid = true
+				salmon = true
+
+			[light_sources.settings.entities.naturalist]
+				snail = true
+				robin = true
+				firefly = true
+				bluejay = true
+				snake = true
+				lizard = true
+				bear = true
+
+			[light_sources.settings.entities.megaparrot]
+				megaparrot = true
+
+			[light_sources.settings.entities.friendsandfoes]
+				moobloom = true
+				iceologer = true
+				glare = true
+
+			[light_sources.settings.entities.artifacts]
+				mimic = true
+
+			[light_sources.settings.entities.creeperoverhaul]
+				cave_creeper = true
+				snowy_creeper = true
+				dark_oak_creeper = true
+				dripstone_creeper = true
+
+			[light_sources.settings.entities.ecologics]
+				squirrel = true
+				penguin = true
+
+			[light_sources.settings.entities.crittersandcompanions]
+				ferret = true
+

@@ -1,0 +1,13 @@
+name = "Frost Boater"
+filename = "Frost-Boater.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/EsT05olX/versions/1/Frost-Boater.jar"
+hash-format = "sha1"
+hash = "8a0510be46fecf5298c5f1cfbd84713c168f2b0e"
+
+[update]
+[update.modrinth]
+mod-id = "EsT05olX"
+version = "H0MFkAUp"

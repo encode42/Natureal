@@ -1,0 +1,13 @@
+name = "Villager Variety"
+filename = "Villager_Variety-All_Mixed_[V1].zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/sPT9u2eL/versions/QaS3NJKm/Villager_Variety-All_Mixed_%5BV1%5D.zip"
+hash-format = "sha1"
+hash = "7c49e26d244d5736645ebe45beaae618a234fff5"
+
+[update]
+[update.modrinth]
+mod-id = "sPT9u2eL"
+version = "WRelskY3"

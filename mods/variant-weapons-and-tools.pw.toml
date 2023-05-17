@@ -1,0 +1,13 @@
+name = "Variant Weapons & Tools"
+filename = "vwat-1.0.6.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/THrWPxB1/versions/1RXRkx0G/vwat-1.0.6.jar"
+hash-format = "sha1"
+hash = "2137d925ab5c6c755ebfd3ec28c6edd2752c4ffc"
+
+[update]
+[update.modrinth]
+mod-id = "THrWPxB1"
+version = "1RXRkx0G"

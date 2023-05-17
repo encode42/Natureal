@@ -1,0 +1,13 @@
+name = "MegaParrot"
+filename = "megaparrot-1.0.7-1.19.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/9usMkV26/versions/s8n5skzQ/megaparrot-1.0.7-1.19.2.jar"
+hash-format = "sha1"
+hash = "e7650a5b2e774980ad7f0c0eb207aeedbdacf20a"
+
+[update]
+[update.modrinth]
+mod-id = "9usMkV26"
+version = "s8n5skzQ"

@@ -1,0 +1,13 @@
+name = "Discord4Fabric"
+filename = "discord4fabric-1.19.2-1.10.1.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/qc4oLwfr/versions/C7PYhqvB/discord4fabric-1.19.2-1.10.1.jar"
+hash-format = "sha1"
+hash = "b6ce3a0517b5663ac7d055f3209c9c09b20450a1"
+
+[update]
+[update.modrinth]
+mod-id = "qc4oLwfr"
+version = "C7PYhqvB"

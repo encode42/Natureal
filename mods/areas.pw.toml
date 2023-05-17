@@ -1,0 +1,13 @@
+name = "Areas"
+filename = "areas-1.19.2-4.3.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/NWvsqJ2Z/versions/RQVdyPU6/areas-1.19.2-4.3.jar"
+hash-format = "sha1"
+hash = "3ffd720d79d6e67193e61bc6c3e58358fcf77012"
+
+[update]
+[update.modrinth]
+mod-id = "NWvsqJ2Z"
+version = "RQVdyPU6"

@@ -1,0 +1,13 @@
+name = "LimitedSpawners"
+filename = "LimitedSpawners-fabric-1.19.2-1.0.6.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/NeO7lLvU/versions/xlcklXG5/LimitedSpawners-fabric-1.19.2-1.0.6.jar"
+hash-format = "sha1"
+hash = "6dd3b4093b3b538b79ee6f7ea6074a4351eaab62"
+
+[update]
+[update.modrinth]
+mod-id = "NeO7lLvU"
+version = "xlcklXG5"
