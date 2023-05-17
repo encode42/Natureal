@@ -3,6 +3,8 @@
 
 A content mod pack based on the concept of nature.
 
+Designed to be played with friends via a dedicated server.
+
 Still *very* early in development. Do not use unless I gave you the link to this project! 
 
 ### ❔ FAQ
