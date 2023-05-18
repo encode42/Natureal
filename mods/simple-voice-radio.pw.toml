@@ -1,0 +1,13 @@
+name = "Simple Voice Radio"
+filename = "simpleradio-1.19.2-1.0.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/S7b8mMXS/versions/M43u4BZD/simpleradio-1.19.2-1.0.2.jar"
+hash-format = "sha1"
+hash = "2ba14e150315594a7d424ee5f0fe677588803dc5"
+
+[update]
+[update.modrinth]
+mod-id = "S7b8mMXS"
+version = "M43u4BZD"
