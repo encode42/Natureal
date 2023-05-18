@@ -191,10 +191,6 @@ file = "config/yosbr/config/presencefootsteps/userconfig.json"
 hash = "0a69ae6887e63335930f355157e67dcf82789108bafce30ba5f4fed764bbc69f"
 
 [[files]]
-file = "config/yosbr/config/realisticsleep.json"
-hash = "2e63c77d4758bb3ede704bec6b7991b90fb0b7d2e03f4c164393a15aa30a6f54"
-
-[[files]]
 file = "config/yosbr/config/restorechatlinks-client.toml"
 hash = "d995a7cd77c642279a70417ba74846a4602f2ccea864baffa6abe68a80b562c5"
 
@@ -526,11 +522,6 @@ metafile = true
 [[files]]
 file = "mods/convenient-decor.pw.toml"
 hash = "f8584aeb2b46433f19e99744c78668ad93442f20fe4f90d3a33cdd2cb282b284"
-metafile = true
-
-[[files]]
-file = "mods/cooperative-advancements.pw.toml"
-hash = "1760dcb8672287f55cdb2a0370127ea71997a8591e8eda6a0c9279819ea0500f"
 metafile = true
 
 [[files]]
@@ -1149,6 +1140,11 @@ hash = "4e02c52bb15016b78964fb8e3cb66002572fd63579f7544e2a24453443f5aa1f"
 metafile = true
 
 [[files]]
+file = "mods/polymorph.pw.toml"
+hash = "a441c287441f57daa6336ad4606c6530320dd0881deb60efa2447a517fb95cd3"
+metafile = true
+
+[[files]]
 file = "mods/powah.pw.toml"
 hash = "e17957ecd2371f4eb4808f87a462dd5995d50ed2932eedeeb80b2ca67930e022"
 metafile = true
@@ -1176,11 +1172,6 @@ metafile = true
 [[files]]
 file = "mods/random-village-names.pw.toml"
 hash = "37e1ed4d92b2a881da44e4e042fced9a741408ba87631c32ca306d86d5ee3116"
-metafile = true
-
-[[files]]
-file = "mods/realisticsleep.pw.toml"
-hash = "5b6d8b48d669b75919b47f5c6fe138d64df5f805b7e0b948969cac9bb487e1bb"
 metafile = true
 
 [[files]]
@@ -1241,6 +1232,11 @@ metafile = true
 [[files]]
 file = "mods/sleep-sooner.pw.toml"
 hash = "3a41a8fdb8b6993da2650a1fbb37aef4207ca41a9d92009be01ca810b23c4011"
+metafile = true
+
+[[files]]
+file = "mods/sleep-tight.pw.toml"
+hash = "34ef13825f275fd41f1db974e2d067967bbaee7b18e0fc5226549ef8db5b3128"
 metafile = true
 
 [[files]]
@@ -1346,11 +1342,6 @@ metafile = true
 [[files]]
 file = "mods/twigs.pw.toml"
 hash = "71b666322e9d5576b92da3ae8c22c5e7d62c9715c0e874dee94dfd2e8a61c9af"
-metafile = true
-
-[[files]]
-file = "mods/unloaded-activity.pw.toml"
-hash = "2419125f96a0e3ba18664e6c70c8e5fa8a04d0e8aa97139b88b07750002b3326"
 metafile = true
 
 [[files]]
