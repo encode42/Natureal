@@ -1,9 +1,11 @@
 name: Build
+
 on:
   push:
     branches:
     - main
   workflow_dispatch:
+
 jobs:
   run:
     runs-on: ubuntu-latest
@@ -24,10 +26,17 @@ jobs:
       run: |
         packwiz modrinth export
 
-    - name: Upload artifact
+    - name: Upload Modrinth Pack
       uses: actions/upload-artifact@v3
       with:
         name: Modrinth Pack
         path: |
-          /Natureal-*.mrpack
+          Natureal-*.mrpack
+
+    - name: Send Webhook Notification
+      if: always()
+      run: |
+        git clone https://github.com/Encode42/discord-workflows-webhook.git webhook
+        bash webhook/send.sh ${{ job.status }} ${{ secrets.WEBHOOK_URL }}
+      shell: bash
 
