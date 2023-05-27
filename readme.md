@@ -71,6 +71,8 @@ If this is a nature mod pack, why are there technology mods?
 
 Unfortunately, many of the nature-based replacements for tech mods aren't up to my standards. For example, chest-based storage systems don't have what makes AE2 great in my opinion; crafting patterns. As such, I decided to include a couple of technology mods to fill that gap. The pack's primary focus is still nature, though.
 
+It's your choice whether to use these mods! Alternaitves such as Create are provided and supported for those that prefer a more kinetic world.
+
 As for the Dr. Who related mods, they were added by request of the Natureals's testers. Why not?
 </details>
 
@@ -88,6 +90,9 @@ If you're running a dedicated server using this pack, you may notice multiple qu
 This pack uses a few resources located outside of Modrinth's ecosystem. As such, they are credited here.
 
 **Mods**  
-- [Illuminations](https://github.com/ladysnake/illuminations)
+- [Create Deco](https://github.com/talrey/CreateDeco)
 - [Croptopia](https://github.com/ExcessiveAmountsOfZombies/Croptopia)
+- [Extended Cogwheels](https://github.com/Rabbitminers/Extended-Cogwheels)
+- [Extended Flywheels](https://github.com/Rabbitminers/Extended-Flywheels-Fabric)
+- [Illuminations](https://github.com/ladysnake/illuminations)
 

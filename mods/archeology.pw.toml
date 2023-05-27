@@ -1,0 +1,13 @@
+name = "Archeology Mod"
+filename = "capsey-archeology-1.19.2-0.2.5.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/LWE2KdIY/versions/23JAJZ7L/capsey-archeology-1.19.2-0.2.5.jar"
+hash-format = "sha1"
+hash = "e91b70a362387163389fe4aa65020d8721ec0c5d"
+
+[update]
+[update.modrinth]
+mod-id = "LWE2KdIY"
+version = "23JAJZ7L"

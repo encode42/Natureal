@@ -1,0 +1,13 @@
+name = "Spellblades and Such"
+filename = "spellbladenext-fabric-1.0.23.3.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/VJkx9nDN/versions/KmvtCn5w/spellbladenext-fabric-1.0.23.3.jar"
+hash-format = "sha1"
+hash = "d2dd9db6fac90c1656bbb2a280a762e545a23e5a"
+
+[update]
+[update.modrinth]
+mod-id = "VJkx9nDN"
+version = "KmvtCn5w"
