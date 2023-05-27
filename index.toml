@@ -281,7 +281,7 @@ metafile = true
 
 [[files]]
 file = "mods/ae2.pw.toml"
-hash = "575076b5530174612732223eba4b2c33dbaac30d4eaa2a04d75b26958e1a338b"
+hash = "803add80bc2ead224e1795195859e2721d50dd3840d7ce35e592371a87e14624"
 metafile = true
 
 [[files]]
@@ -481,7 +481,7 @@ metafile = true
 
 [[files]]
 file = "mods/cinderscapes.pw.toml"
-hash = "cb7ab90e5d79e52b0dfeee1d34f5533216f9ef2fd7607efb73bca421c29f148c"
+hash = "cf2c39c090aa731236f406327f1f3bf786c1563e62a02427e270a07a11977fc9"
 metafile = true
 
 [[files]]
@@ -526,7 +526,7 @@ metafile = true
 
 [[files]]
 file = "mods/corgilib.pw.toml"
-hash = "9322278362644f81f8cc456b622d0b761eaf2677abbaca5db1952b23098a33bb"
+hash = "cdfbb6b7cd0f3205e6ba9f77f9a16aff7ebb4c4afc275264e86edd8cef2a9423"
 metafile = true
 
 [[files]]
@@ -581,7 +581,7 @@ metafile = true
 
 [[files]]
 file = "mods/diagonal-fences.pw.toml"
-hash = "967d4c0925c9298c1dad710956d42932f6fbb4dc1eb1d32d39ad74b0f925440c"
+hash = "b13f9012e1dff94729790a6500996fd1b6790daa5a1b5e42a3926813f2960452"
 metafile = true
 
 [[files]]
@@ -691,7 +691,7 @@ metafile = true
 
 [[files]]
 file = "mods/every-compat.pw.toml"
-hash = "8724b054bc828825733260f59f7d87bf6e1549e8da7273fa1a9ae73cc434f344"
+hash = "ffa8437e10ac3fdd36147dd6b3beaf26224158ee80a88a1a13a7e0725405d8bd"
 metafile = true
 
 [[files]]
@@ -1036,7 +1036,7 @@ metafile = true
 
 [[files]]
 file = "mods/modern-industrialization.pw.toml"
-hash = "a77b5b8666a9eb649cf54460f814b3b0c4f24c813224a5d222bb92851252daa4"
+hash = "623d0bcc2bdad33dca932608c5bb7025f381c747ed3c2799fbaac2404e770670"
 metafile = true
 
 [[files]]
@@ -1046,7 +1046,7 @@ metafile = true
 
 [[files]]
 file = "mods/moonlight.pw.toml"
-hash = "296b56b40ac9307ed1ca7fa5f2a74cd5f6f69177ae6da768856d2f0742e2f9cb"
+hash = "35a3ab16043b858cf78417311402c4f79c873660aa90b296fc7d079393e1dfb2"
 metafile = true
 
 [[files]]
@@ -1081,7 +1081,7 @@ metafile = true
 
 [[files]]
 file = "mods/mouse-wheelie.pw.toml"
-hash = "f1ca8ddc248ddaf1a95cadc741c5f8387397ecfb3c957079add3b2881629de30"
+hash = "7629f7b9bc1b04f215a4bb9e6739ba03995f12efe8a810151a152ab9f1516866"
 metafile = true
 
 [[files]]
@@ -1136,7 +1136,7 @@ metafile = true
 
 [[files]]
 file = "mods/philips-ruins.pw.toml"
-hash = "18e98a451906bf4cd6578dce8c176a50d18a8e167219d9a2843f596085541838"
+hash = "1484ea868e8e9e31752cfa008bed7412e330f7466885b906fd792580fdb6b3c2"
 metafile = true
 
 [[files]]
@@ -1296,7 +1296,7 @@ metafile = true
 
 [[files]]
 file = "mods/supplementaries.pw.toml"
-hash = "3f5a427672a7b0867cd0467974b1400a05ec8fa0f66b8cb15404f747520981d8"
+hash = "0047a645ca1cc899cc5ae48a50ef55229bf136c22024ee12636115c6947fc23b"
 metafile = true
 
 [[files]]
@@ -1401,7 +1401,7 @@ metafile = true
 
 [[files]]
 file = "mods/variety-aquatic.pw.toml"
-hash = "fe747439740bfd56de41b0ca1a1a77349b98449feb06f7b1a6582530c662e0e4"
+hash = "96e795ebf767dde1975099e536df41870d8a4703ccd0f7d516e054b0bb08db06"
 metafile = true
 
 [[files]]
@@ -1461,7 +1461,7 @@ metafile = true
 
 [[files]]
 file = "mods/wilder-wild.pw.toml"
-hash = "9b025e1052343a3705aa9d3ab0a30943fcd7992aa92327306d7e5101daca9e05"
+hash = "dd16ed741ee9f4f582eda629704cb902f6127930ea160963e7d54a0109e06601"
 metafile = true
 
 [[files]]

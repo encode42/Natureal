@@ -3,11 +3,11 @@ filename = "Variety_Aquatic-1.0.4.2.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/RgnNZNlx/versions/tSMO3wuw/Variety_Aquatic-1.0.4.2.jar"
+url = "https://cdn.modrinth.com/data/RgnNZNlx/versions/ikO2uvVg/Variety_Aquatic-1.0.4.2.jar"
 hash-format = "sha1"
-hash = "fb3a0127e2752d6427b7d85ed22c452568456733"
+hash = "603cddf452d97e7c88849230659970c4285f1be7"
 
 [update]
 [update.modrinth]
 mod-id = "RgnNZNlx"
-version = "tSMO3wuw"
+version = "ikO2uvVg"

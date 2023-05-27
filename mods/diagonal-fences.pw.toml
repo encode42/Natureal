@@ -1,13 +1,13 @@
 name = "Diagonal Fences"
-filename = "DiagonalFences-v4.2.4-1.19.2-Fabric.jar"
+filename = "DiagonalFences-v4.2.5-1.19.2-Fabric.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/IKARgflD/versions/BGJybfzA/DiagonalFences-v4.2.4-1.19.2-Fabric.jar"
+url = "https://cdn.modrinth.com/data/IKARgflD/versions/fL2zkLVB/DiagonalFences-v4.2.5-1.19.2-Fabric.jar"
 hash-format = "sha1"
-hash = "ec7ba16ae397714758b22aae123d0c5432de9423"
+hash = "3ed67c3c4380cb29ae264dbe991062be07a10d47"
 
 [update]
 [update.modrinth]
 mod-id = "IKARgflD"
-version = "BGJybfzA"
+version = "fL2zkLVB"
