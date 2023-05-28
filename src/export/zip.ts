@@ -9,6 +9,10 @@ import { chalk, fetch } from "zx";
 import JSZip from "jszip";
 import { directories, files } from "~/util/path";
 
+const headers = {
+    "User-Agent": process.env.USER_AGENT ?? "Encode42/Natureal (me@encode42.dev)"
+};
+
 export const exportZip: ExportFunction = async side => {
     const indexFile = await readFile(files.packwiz.index, {
         "encoding": "utf-8"
@@ -16,10 +20,14 @@ export const exportZip: ExportFunction = async side => {
 
     const index = parse(indexFile);
 
-    const zip = new JSZip();
-    const modrinth = new ModrinthV2Client();
-    const curseForge = new CurseforgeV1Client(process.env.CURSEFORGE_API_TOKEN);
+    const modrinth = new ModrinthV2Client({
+        headers
+    });
+    const curseForge = new CurseforgeV1Client(process.env.CURSEFORGE_API_TOKEN, {
+        headers
+    });
 
+    const zip = new JSZip();
     for (const indexFile of index.files) {
         const content = await readFile(join(directories.pack, indexFile.file), {
             "encoding": "utf-8"
@@ -70,9 +78,7 @@ export const exportZip: ExportFunction = async side => {
         }
 
         const request = await fetch(downloadURL, {
-            "headers": {
-                "User-Agent": process.env.USER_AGENT ?? "Encode42/Natureal (me@encode42.dev)"
-            }
+            headers
         });
 
         if (!request.ok) {
