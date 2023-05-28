@@ -1,0 +1,74 @@
+name: Build
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to publish the mod pack as."
+        required: true
+        type: string
+
+      releaseChannel:
+        description: "Release channel to release the mod pack in."
+        type: choice
+        options:
+          - release
+          - beta
+          - alpha
+        default: "release"
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    env:
+      CURSEFORGE_API_TOKEN: ${{ secrets.CURSEFORGE_API_TOKEN }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: "1.19"
+
+      - name: Install packwiz
+        run: |
+          go install github.com/packwiz/packwiz@latest
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v2
+        id: pnpm-install
+        with:
+          version: 7
+          run_install: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18
+          cache: pnpm
+
+      - name: Install dependencies
+        run: |
+          pnpm install --prod
+
+      - name: Build Modrinth pack
+        run: |
+          pnpm run export:modrinth
+
+      - name: Build CurseForge pack
+        run: |
+          pnpm run export:curseForge
+
+      - name: Publish to Modrinth
+        uses: Kir-Antipov/mc-publish@v3.3
+        with:
+          modrinth-id: scFX3hJJ
+          modrinth-token: ${{ secrets.MODRINTH_API_TOKEN }}
+          modrinth-files: build/*.mrpack
+
+          name: ${{ inputs.version }}
+          version: ${{ inputs.version }}
+          loaders: fabric
+          game-versions: 1.19.2
+          changelog-file: changelog.md

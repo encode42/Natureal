@@ -9,6 +9,8 @@ on:
 jobs:
   run:
     runs-on: ubuntu-latest
+    env:
+      CURSEFORGE_API_TOKEN: ${{ secrets.CURSEFORGE_API_TOKEN }}
     steps:
     - name: Checkout
       uses: actions/checkout@v2
@@ -48,7 +50,7 @@ jobs:
       with:
         name: Modrinth Pack
         path: |
-          /build/Natureal-[\d\.?]*\.mrpack
+          build/*.mrpack
 
     - name: Build CurseForge pack
       run: |
@@ -59,7 +61,7 @@ jobs:
       with:
         name: CurseForge Pack
         path: |
-          /build/Natureal-[\d\.?]*\.cf.zip
+          build/*.cf.zip
 
     - name: Send webhook notification
       if: always()
