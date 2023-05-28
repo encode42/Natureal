@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "config/paxi/resourcepacks/all-the-fish.pw.toml"
-hash = "7c93a11dec0076f57f64993db6204a20722b0b1946b315def08b8193481049ed"
+hash = "f3ea355a5e9f7c77c52b8338ea6bb820515e1c6f59dd27142373aea23119e52d"
 metafile = true
 
 [[files]]
@@ -365,7 +365,7 @@ metafile = true
 
 [[files]]
 file = "mods/bedspreads.pw.toml"
-hash = "6eb0b682608efaf6c7e6b7310014a2933f4563422a9e0bbc96a05ad4ed57b900"
+hash = "1dea80fa99431ee112cf7f7da54a9d0352b2f9147f791d47853a8524d6d0e02f"
 metafile = true
 
 [[files]]
@@ -375,7 +375,7 @@ metafile = true
 
 [[files]]
 file = "mods/better-lily-pads.pw.toml"
-hash = "1f0509c21de199fd0d6e35bae6c1aabbcf7e91573bce075a211c6316d2dbf2d5"
+hash = "5440796a9af710df4acda8826af378ffb5a46f60f49ac05f517b4a75fab06494"
 metafile = true
 
 [[files]]
@@ -1000,7 +1000,7 @@ metafile = true
 
 [[files]]
 file = "mods/iris.pw.toml"
-hash = "5238871d49905fe598b5e2be470b87f94fe22a1e5983dd0967b03d502f9d5867"
+hash = "ec644a70524673946d8a987bbc4d3f0968c4885f55541b837ee14a366b218d35"
 metafile = true
 
 [[files]]

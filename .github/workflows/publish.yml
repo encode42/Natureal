@@ -71,5 +71,5 @@ jobs:
           loaders: fabric
           game-versions: 1.19.2
 
-          files: build/*.mrpack
+          modrinth-files: build/*.mrpack
           changelog-file: changelog.md

@@ -21,8 +21,7 @@ jobs:
         go-version: "1.19"
 
     - name: Install packwiz
-      run: |
-        go install github.com/packwiz/packwiz@latest
+      run: go install github.com/packwiz/packwiz@latest
 
     - name: Set up pnpm
       uses: pnpm/action-setup@v2
@@ -38,30 +37,27 @@ jobs:
         cache: pnpm
 
     - name: Install dependencies
-      run: |
-        pnpm install --prod
+      run: pnpm install --prod
 
     - name: Build Modrinth pack
       run: |
         pnpm run export:modrinth
+        ls build/
 
     - name: Upload Modrinth pack
       uses: actions/upload-artifact@v3
       with:
         name: Modrinth Pack
-        path: |
-          build/Natureal-*.mrpack
+        path: build/Natureal-*.mrpack
 
     - name: Build CurseForge pack
-      run: |
-        pnpm run export:curseForge
+      run: pnpm run export:curseForge
 
     - name: Upload CurseForge pack
       uses: actions/upload-artifact@v3
       with:
         name: CurseForge Pack
-        path: |
-          build/Natureal-*.cf.zip
+        path: build/Natureal-*.cf.zip
 
     - name: Send webhook notification
       if: always()
