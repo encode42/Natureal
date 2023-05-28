@@ -359,6 +359,11 @@ hash = "9b3ae265b25769ce00b7bbda2ac85c9aad1aa006478a2f0d54bf2c1a0441afae"
 metafile = true
 
 [[files]]
+file = "mods/beautify-refabricated.pw.toml"
+hash = "4209cf257bebdc1a120792d7e809386bc27dc2f98eedfbcb0070e2ff2898966b"
+metafile = true
+
+[[files]]
 file = "mods/bedrodium.pw.toml"
 hash = "81e7f2c552b187f2fbfad7d0fa79d3f7249b2d9a322b40156b008bb163b81095"
 metafile = true
@@ -715,7 +720,7 @@ metafile = true
 
 [[files]]
 file = "mods/emi.pw.toml"
-hash = "59b5374de7f0b2c1ab4f90ee14466929e1ed4e33e19a82c46b35cd0afb53cce1"
+hash = "7571f3cc984e9156e0c145b6706e7b59a16c48035fb34b75ac7200e17e1015c3"
 metafile = true
 
 [[files]]
@@ -914,13 +919,18 @@ hash = "ca8bb162cc1bdecced407d6297864f0b2df48ce6ebfed063635f83a23331e253"
 metafile = true
 
 [[files]]
-file = "mods/funky-flora.pw.toml"
-hash = "4681534d5d94bdae13866d8ca7b23cd3aba5804f03e41e3b154c7a83c08a6b3b"
+file = "mods/gazebos.pw.toml"
+hash = "805db46a0fa2f7cd37b4f61bf7e8e58f534f128cfae9ca9fd26e0f6bee6c7691"
 metafile = true
 
 [[files]]
 file = "mods/geckolib.pw.toml"
 hash = "00ea0687346b420a197a0545605f77de9fcdf0e3b710ea24671929f22f6d722e"
+metafile = true
+
+[[files]]
+file = "mods/geophilic.pw.toml"
+hash = "7c9c710021d25b3778218b6496c3f3b864aa81d11faa689d73661eba19f1ec83"
 metafile = true
 
 [[files]]
@@ -1484,6 +1494,11 @@ hash = "124f9169c19a551cd4d9ff5e1b31d4749d80d8d37064e882d2a5fc8f0910d503"
 metafile = true
 
 [[files]]
+file = "mods/towns-and-towers.pw.toml"
+hash = "473c69f233713039b01fab7942f1cc4669ede9ac800063a3c03ed5dd95dfe15c"
+metafile = true
+
+[[files]]
 file = "mods/travelersbackpack.pw.toml"
 hash = "ea901cb9c72852f9f391da45d2dcd8a1d316fed231e6e8cf644396616c1a7c04"
 metafile = true
@@ -1576,6 +1591,16 @@ metafile = true
 [[files]]
 file = "mods/villager-names-serilum.pw.toml"
 hash = "b04c53153b479b9ba5cd670f0ac9418456ca478e972030dcf9ba9b72928c0a9d"
+metafile = true
+
+[[files]]
+file = "mods/villagersplus.pw.toml"
+hash = "78ad7a2708497ca79d05d28b6a2dec314d3109ccde33d55351679c0f662b0ee0"
+metafile = true
+
+[[files]]
+file = "mods/villagertradefix.pw.toml"
+hash = "909bd0252a8b220bbd74fd5b3c46f22f99ba6ba00977b38712426ff5e17d5647"
 metafile = true
 
 [[files]]
