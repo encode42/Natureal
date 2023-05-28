@@ -27,8 +27,8 @@ jobs:
       uses: actions/cache@v3
       with:
         path: ~/.cache/packwiz/cache/
-        key: ${{ runner.os }}-packwiz-store-${{ hashFiles('**/src/pack/index.toml') }}
-        restore-keys: ${{ runner.os }}-packwiz-store-
+        key: ${{ runner.os }}-packwiz-store
+        restore-keys: ${{ runner.os }}-packwiz-store
 
     - name: Set up pnpm
       uses: pnpm/action-setup@v2

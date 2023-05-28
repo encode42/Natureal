@@ -38,8 +38,8 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ~/.cache/packwiz/cache/
-          key: ${{ runner.os }}-packwiz-store-${{ hashFiles('**/src/pack/index.toml') }}
-          restore-keys: ${{ runner.os }}-packwiz-store-
+          key: ${{ runner.os }}-packwiz-store
+          restore-keys: ${{ runner.os }}-packwiz-store
 
       - name: Set up pnpm
         uses: pnpm/action-setup@v2
@@ -66,7 +66,7 @@ jobs:
         run: pnpm run export:curseForge
 
       - name: Publish to Modrinth
-        uses: Kir-Antipov/mc-publish@v3
+        uses: Kir-Antipov/mc-publish@v3.3
         with:
           modrinth-id: scFX3hJJ
           modrinth-token: ${{ secrets.MODRINTH_API_TOKEN }}
