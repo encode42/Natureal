@@ -1,4 +1,4 @@
-name: Build
+name: Publish
 
 on:
   workflow_dispatch:
@@ -65,10 +65,11 @@ jobs:
         with:
           modrinth-id: scFX3hJJ
           modrinth-token: ${{ secrets.MODRINTH_API_TOKEN }}
-          modrinth-files: build/*.mrpack
 
           name: ${{ inputs.version }}
           version: ${{ inputs.version }}
           loaders: fabric
           game-versions: 1.19.2
+
+          files: build/*.mrpack
           changelog-file: changelog.md

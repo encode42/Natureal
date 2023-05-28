@@ -50,7 +50,7 @@ jobs:
       with:
         name: Modrinth Pack
         path: |
-          build/*.mrpack
+          build/Natureal-*.mrpack
 
     - name: Build CurseForge pack
       run: |
@@ -61,7 +61,7 @@ jobs:
       with:
         name: CurseForge Pack
         path: |
-          build/*.cf.zip
+          build/Natureal-*.cf.zip
 
     - name: Send webhook notification
       if: always()
