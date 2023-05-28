@@ -78,6 +78,16 @@ As for the Dr. Who related mods, they were added by request of the Natureals's t
 
 <details>
 <summary>
+How is this mod pack built?
+</summary>
+
+If you look at the mod pack's [source code](https://github.com/Encode42/Natureal), you'll notice that it isn't structured like a normal packwiz project!
+
+I've written a wrapper around packwiz to handle additional functionality, such as zip export. You'll need Node.js and PNPM if you'd like to build this yourself using said wrapper, but otherwise, the standard packwiz files are in [`/pack/mods`](https://github.com/Encode42/Natureal/blob/HEAD/src/pack).
+</details>
+
+<details>
+<summary>
 What in the world does the summary mean?
 </summary>
 
@@ -95,4 +105,3 @@ This pack uses a few resources located outside of Modrinth's ecosystem. As such,
 - [Extended Cogwheels](https://github.com/Rabbitminers/Extended-Cogwheels)
 - [Extended Flywheels](https://github.com/Rabbitminers/Extended-Flywheels-Fabric)
 - [Illuminations](https://github.com/ladysnake/illuminations)
-

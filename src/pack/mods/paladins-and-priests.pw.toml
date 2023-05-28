@@ -1,0 +1,17 @@
+name = "Paladins & Priests"
+filename = "paladins-fabric-0.9.4+1.19.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/FxXkHaLe/versions/lhD9HRTX/paladins-fabric-0.9.4%2B1.19.2.jar"
+hash-format = "sha1"
+hash = "b355164bf4e9e2ce6a31d35087159aae84b222dd"
+
+[update]
+[update.modrinth]
+mod-id = "FxXkHaLe"
+version = "lhD9HRTX"
+
+[update.curseforge]
+file-id = 4544649
+project-id = 856548

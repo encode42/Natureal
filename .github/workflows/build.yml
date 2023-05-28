@@ -22,21 +22,48 @@ jobs:
       run: |
         go install github.com/packwiz/packwiz@latest
 
-    - name: Build
-      run: |
-        packwiz modrinth export
+    - name: Set up pnpm
+      uses: pnpm/action-setup@v2
+      id: pnpm-install
+      with:
+        version: 7
+        run_install: false
 
-    - name: Upload Modrinth Pack
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 18
+        cache: pnpm
+
+    - name: Install dependencies
+      run: |
+        pnpm install
+
+    - name: Build Modrinth pack
+      run: |
+        pnpm run export:modrinth
+
+    - name: Upload Modrinth pack
       uses: actions/upload-artifact@v3
       with:
         name: Modrinth Pack
         path: |
-          Natureal-*.mrpack
+          /build/*.mrpack
 
-    - name: Send Webhook Notification
+    - name: Build CurseForge pack
+      run: |
+        pnpm run export:curseForge
+
+    - name: Upload CurseForge pack
+      uses: actions/upload-artifact@v3
+      with:
+        name: CurseForge Pack
+        path: |
+          /build/*.cf.zip
+
+    - name: Send webhook notification
       if: always()
       run: |
         git clone https://github.com/Encode42/discord-workflows-webhook.git webhook
         bash webhook/send.sh ${{ job.status }} ${{ secrets.WEBHOOK_URL }}
       shell: bash
-

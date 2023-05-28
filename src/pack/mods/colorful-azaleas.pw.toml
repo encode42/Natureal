@@ -1,0 +1,17 @@
+name = "Colorful Azaleas"
+filename = "ColourfulAzaleas+-+FABRIC+1.19.2+-+(1.0.0).jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/HDZ49j5G/versions/xTkNCljo/ColourfulAzaleas%2B-%2BFABRIC%2B1.19.2%2B-%2B%281.0.0%29.jar"
+hash-format = "sha1"
+hash = "920b8b47c13151abb290d89754614ad573247dbf"
+
+[update]
+[update.modrinth]
+mod-id = "HDZ49j5G"
+version = "xTkNCljo"
+
+[update.curseforge]
+file-id = 4543255
+project-id = 602536

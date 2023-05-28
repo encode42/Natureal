@@ -1,0 +1,16 @@
+name = "Natureal"
+author = "Encode42"
+version = "0.0.4"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "c19668cc26d29dfa9546ba39f31e2c635eb8e17c49cf663ecd9c0e910dc99740"
+
+[versions]
+fabric = "0.14.19"
+minecraft = "1.19.2"
+
+[options]
+datapack-folder = "config/paxi/datapacks"

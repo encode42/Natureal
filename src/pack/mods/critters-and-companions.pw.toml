@@ -1,0 +1,17 @@
+name = "Critters and Companions"
+filename = "crittersandcompanions-fabric-1.19.2-1.0.3.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/Yd4wb5wZ/versions/lf3mLmnb/crittersandcompanions-fabric-1.19.2-1.0.3.jar"
+hash-format = "sha1"
+hash = "cbef4e44c130e1f7cb1e720e98a6c343afca9251"
+
+[update]
+[update.modrinth]
+mod-id = "Yd4wb5wZ"
+version = "lf3mLmnb"
+
+[update.curseforge]
+file-id = 4328857
+project-id = 574913
