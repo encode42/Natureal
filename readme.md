@@ -1,13 +1,18 @@
+[Modrinth]: https://modrinth.com/modpack/natureal
+[Modrinth Badge]: https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/modrinth_vector.svg
+[Modrinth Gallery]: https://modrinth.com/modpack/natureal/gallery
+[Modrinth Gallery Badge]: https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/documentation/modrinth-gallery_vector.svg
+[Support]: https://encode42.dev/support
+[Support Badge]: https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/social/discord-singular_vector.svg
+
+<img src=".github/asset/badge-lq.png" align="left" id="header">
+<div align="right">
+
 # Natureal
-### ˈneɪʧərːiul
+### ˈneɪʧərːiul - A content mod pack based on the concept of nature.
 
-A content mod pack based on the concept of nature.
-
-Designed to be played with friends via a dedicated server.
-
-Gallery images and related will be uploaded when they're made. It's too early for them yet!
-
-🚧 Still *very* early in development. Do not use unless I gave you the link to this project! 🚧
+[![Modrinth Badge]][Modrinth] [![Modrinth Gallery Badge]][Modrinth Gallery] [![Support Badge]][Support]
+</div>
 
 ### ⚙️ Features
 **Vanilla-styled**
@@ -35,10 +40,11 @@ Gallery images and related will be uploaded when they're made. It's too early fo
 - Utilizes Iris for fast shaders
 - Includes safe and lesser-known performance tweaks
 - Strives to include performant content mods
+- Not lightweight, but not heavyweight either!
 
 **...and more!**
 
-I did not make any of the projects that make this modpack possible.  
+I did not make any of the projects that make this mod pack possible.  
 Make sure to give some love to the authors of the projects listed in [/mods](https://github.com/Encode42/Natureal/tree/main/mods), [/resourcepacks](https://github.com/Encode42/Natureal/tree/main/config/paxi/resourcepacks), and [/shaderpacks](https://github.com/Encode42/Natureal/tree/main/shaderpacks)!
 
 ### ❔ FAQ
@@ -56,10 +62,20 @@ This was inspired by [Crucial 2](https://github.com/VazkiiMods/crucial2)'s ideol
 
 <details>
 <summary>
+The game is consistently stuttering! Why?
+</summary>
+
+This is likely due to [Java's GC](https://how-java-works.yht.one/) being run.
+
+This is normal, and can be mitigated by allocating more memory to your client. I recommend `6 GB` as a minimum! You can also use [flags.sh](https://flags.sh) to generate a launcher profile using [Aikar's flags](https://docs.papermc.io/paper/aikars-flags) and your specified amount of memory.
+</details>
+
+<details>
+<summary>
 Does this work with OptiFine?
 </summary>
 
-No. Nor is this fully* compatible with OptiFine resource packs. Natureal modpack uses Sodium, Iris, etc.
+No. Nor is this fully* compatible with OptiFine resource packs. Natureal mod pack uses Sodium, Iris, etc.
 
 \* Natureal includes a few mods that add resource pack features from OptiFine, but Natureal itself doesn't aim to be fully OptiFine-compatible.
 </details>
@@ -85,23 +101,3 @@ If you look at the mod pack's [source code](https://github.com/Encode42/Natureal
 
 I've written a wrapper around packwiz to handle additional functionality, such as zip export. You'll need Node.js and PNPM if you'd like to build this yourself using said wrapper, but otherwise, the standard packwiz files are in [`/pack/mods`](https://github.com/Encode42/Natureal/blob/HEAD/src/pack).
 </details>
-
-<details>
-<summary>
-What in the world does the summary mean?
-</summary>
-
-It's a quote from Thom Yorke's *[Analyze](https://youtu.be/MnMUdko6ljs?t=105)*, a song on an album regarding human issues. I felt it was fitting for a mod pack focused on nature!
-
-If you're running a dedicated server using this pack, you may notice multiple quotes mentioning nature in the MOTD. I'm not sure who said these. I just took them from a list I found online.
-</details>
-
-### ©️ Credits
-This pack uses a few resources located outside of Modrinth's ecosystem. As such, they are credited here.
-
-**Mods**  
-- [Create Deco](https://github.com/talrey/CreateDeco)
-- [Croptopia](https://github.com/ExcessiveAmountsOfZombies/Croptopia)
-- [Extended Cogwheels](https://github.com/Rabbitminers/Extended-Cogwheels)
-- [Extended Flywheels](https://github.com/Rabbitminers/Extended-Flywheels-Fabric)
-- [Illuminations](https://github.com/ladysnake/illuminations)
