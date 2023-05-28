@@ -3,11 +3,6 @@ name: Publish
 on:
   workflow_dispatch:
     inputs:
-      version:
-        description: "Version to publish the mod pack as."
-        required: true
-        type: string
-
       releaseChannel:
         description: "Release channel to release the mod pack in."
         type: choice
@@ -25,6 +20,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
       - name: Set up Go
         uses: actions/setup-go@v4
@@ -55,26 +52,39 @@ jobs:
           cache: pnpm
 
       - name: Install dependencies
+        run: pnpm install --prod
+
+      - name: Drop snapshot label
+        id: version
         run: |
-          ls ~/.cache/packwiz/cache/
-          pnpm install --prod
+          sed -i 's/\(version = ".*\)-SNAPSHOT\("\)/\1\2/' src/pack/pack.toml
+          echo "VERSION=$(cat src/pack/pack.toml | grep "version =" | sed 's/version = "\(.*\)"/\1/')" >> $GITHUB_OUTPUT
 
       - name: Build Modrinth pack
         run: pnpm run export:modrinth
 
-      - name: Build CurseForge pack
-        run: pnpm run export:curseForge
+      - name: Get commits since last tag
+        id: commits
+        uses: simbo/changes-since-last-release-action@v1
+        with:
+          line-prefix: "- "
+          include-hashes: false
 
-      - name: Publish to Modrinth
+      - name: Publish
         uses: Kir-Antipov/mc-publish@v3.3
         with:
+          github-tag: ${{ steps.version.outputs.VERSION }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-prerelease: ${{ inputs.releaseChannel != "release" }}
+
           modrinth-id: scFX3hJJ
           modrinth-token: ${{ secrets.MODRINTH_API_TOKEN }}
 
-          name: ${{ inputs.version }}
-          version: ${{ inputs.version }}
+          name: ${{ steps.version.outputs.VERSION }}
+          version: ${{ steps.version.outputs.VERSION }}
+          version-type: ${{ inputs.releaseChannel }}
           loaders: fabric
           game-versions: 1.19.2
 
           modrinth-files: build/*.mrpack
-          changelog-file: changelog.md
+          changelog: ${{ steps.commits.outputs.log }}
