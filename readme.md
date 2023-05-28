@@ -87,9 +87,9 @@ If this is a nature mod pack, why are there technology mods?
 
 Unfortunately, many of the nature-based replacements for tech mods aren't up to my standards. For example, chest-based storage systems don't have what makes AE2 great in my opinion; crafting patterns. As such, I decided to include a couple of technology mods to fill that gap. The pack's primary focus is still nature, though.
 
-It's your choice whether to use these mods! Alternaitves such as Create are provided and supported for those that prefer a more kinetic world.
+It's your choice whether to use these mods! Alternatives such as Create are provided and supported for those that prefer a more kinetic world.
 
-As for the Dr. Who related mods, they were added by request of the Natureals's testers. Why not?
+As for the Dr. Who related mods, they were added by request of the Natureal's testers. Why not?
 </details>
 
 <details>

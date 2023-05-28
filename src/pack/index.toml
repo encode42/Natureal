@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "config/paxi/resourcepacks/all-the-fish.pw.toml"
-hash = "f3ea355a5e9f7c77c52b8338ea6bb820515e1c6f59dd27142373aea23119e52d"
+hash = "7c93a11dec0076f57f64993db6204a20722b0b1946b315def08b8193481049ed"
 metafile = true
 
 [[files]]
@@ -715,7 +715,7 @@ metafile = true
 
 [[files]]
 file = "mods/emi.pw.toml"
-hash = "75b14e379a1617dd6dd6ef538b26c349ac8df6cf55d1338b89da564ac3b36ea8"
+hash = "59b5374de7f0b2c1ab4f90ee14466929e1ed4e33e19a82c46b35cd0afb53cce1"
 metafile = true
 
 [[files]]
@@ -1585,7 +1585,7 @@ metafile = true
 
 [[files]]
 file = "mods/vmp-fabric.pw.toml"
-hash = "36876f737e7e36037954a23ef5e8df1a45250e3fb64eb7f5073426f22a4cb0e6"
+hash = "acc5cc2393fe32b986cab000a4f7eaa6f95c3268ef4a9814b205759c607baa3d"
 metafile = true
 
 [[files]]
