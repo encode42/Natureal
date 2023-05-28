@@ -37,7 +37,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pnpm install
+        pnpm install --prod
 
     - name: Build Modrinth pack
       run: |
@@ -48,7 +48,7 @@ jobs:
       with:
         name: Modrinth Pack
         path: |
-          /build/*.mrpack
+          /build/Natureal-[\d\.?]*\.mrpack
 
     - name: Build CurseForge pack
       run: |
@@ -59,7 +59,7 @@ jobs:
       with:
         name: CurseForge Pack
         path: |
-          /build/*.cf.zip
+          /build/Natureal-[\d\.?]*\.cf.zip
 
     - name: Send webhook notification
       if: always()
