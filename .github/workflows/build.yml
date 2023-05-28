@@ -23,6 +23,13 @@ jobs:
     - name: Install packwiz
       run: go install github.com/packwiz/packwiz@latest
 
+    - name: Setup Packwiz cache
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/packwiz/cache/
+        key: ${{ runner.os }}-packwiz-store-${{ hashFiles('**/src/pack/index.toml') }}
+        restore-keys: ${{ runner.os }}-packwiz-store-
+
     - name: Set up pnpm
       uses: pnpm/action-setup@v2
       id: pnpm-install
@@ -40,9 +47,7 @@ jobs:
       run: pnpm install --prod
 
     - name: Build Modrinth pack
-      run: |
-        pnpm run export:modrinth
-        ls build/
+      run: pnpm run export:modrinth
 
     - name: Upload Modrinth pack
       uses: actions/upload-artifact@v3
