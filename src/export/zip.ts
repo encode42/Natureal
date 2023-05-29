@@ -1,6 +1,7 @@
 import type { ExportFunction } from "~/type/Export";
 import { join, dirname } from "node:path";
 import { access, readFile, writeFile } from "node:fs/promises";
+import { createHash } from "node:crypto";
 import { chalk, fetch } from "zx";
 import JSZip from "jszip";
 import { directories, files } from "~/util/path";
@@ -9,7 +10,6 @@ import { getModrinthVersion } from "~/util/modrinth/getModrinthVersion";
 import { getCurseForgeVersion } from "~/util/curseForge/getCurseForgeVersion";
 import { headers } from "~/util/common/headers";
 import { zipOptions } from "~/util/common/zipOptions";
-import { createHash } from "crypto";
 
 export const exportZip: ExportFunction = async side => {
     const index = await getIndex();

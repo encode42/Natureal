@@ -43,7 +43,7 @@ type IndexFilePack = BaseIndexFile & {
 }
 
 type IndexFileContent = BaseIndexFile & {
-    "content": string
+    "content": Uint8Array
 }
 
 export type IndexFile = IndexFilePack | IndexFileContent;
@@ -61,12 +61,10 @@ export async function getIndex(): Promise<Index> {
     const index = parse(indexFile) as Index;
 
     for (let i = 0; i < index.files.length; i++) {
-        const packwizFile= await readFile(join(directories.pack, index.files[i].file), {
-            "encoding": "utf-8"
-        });
+        const packwizFile= await readFile(join(directories.pack, index.files[i].file));
 
         if (index.files[i].file.endsWith(".pw.toml")) {
-            (index.files[i] as IndexFilePack).pack = parse(packwizFile) as PackwizFile;
+            (index.files[i] as IndexFilePack).pack = parse(packwizFile.toString()) as PackwizFile;
             continue;
         }
 
