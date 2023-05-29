@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/paxi/datapacks/natureal.zip"
+hash = "20049f3fe2467c6627ebc229b7c89c9611b6f82aea0b47d914cbf65f0b6c25ab"
+
+[[files]]
 file = "config/paxi/resourcepacks/all-the-fish.pw.toml"
 hash = "f3ea355a5e9f7c77c52b8338ea6bb820515e1c6f59dd27142373aea23119e52d"
 metafile = true
@@ -251,7 +255,7 @@ hash = "cef4e46e3882c126aad81d4ef17689d8dcff42e033b005e267effee8db9fc463"
 
 [[files]]
 file = "config/yosbr/shaderpacks/ComplementaryReimagined.zip.txt"
-hash = "0572065d893941ce021034c9cec02390f9e9221f9710bd7edfea6566df56f4f1"
+hash = "1149243a64b3d112190c13365caf7a07986846a48e4850d33a150d2a1c01f47f"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"
@@ -1019,6 +1023,11 @@ hash = "17f82969a9c262a74bdab9ba08def3dad527b5e12ed9d65a2ea42404cde54571"
 metafile = true
 
 [[files]]
+file = "mods/joy-of-painting.pw.toml"
+hash = "20e0e438d9ddc2f6bf4eaae6ba92c587adbfc67d9e548f33ac1fe7ab30d193d8"
+metafile = true
+
+[[files]]
 file = "mods/jump-over-fences.pw.toml"
 hash = "a24fc322d96541d9ed49063dff1704b332ccc01c1255f1d64d1811b5c4800020"
 metafile = true
@@ -1605,7 +1614,7 @@ metafile = true
 
 [[files]]
 file = "mods/vmp-fabric.pw.toml"
-hash = "acc5cc2393fe32b986cab000a4f7eaa6f95c3268ef4a9814b205759c607baa3d"
+hash = "63236cec2766e835aa4c816473a71a2f8b7184af7d57b004d2aa29356a192424"
 metafile = true
 
 [[files]]
