@@ -85,7 +85,7 @@ jobs:
           modrinth-id: scFX3hJJ
           modrinth-token: ${{ secrets.MODRINTH_API_TOKEN }}
 
-          curseforge-id: 867527
+          curseforge-id: 867551
           curseforge-token: ${{ secrets.CURSEFORGE_API_TOKEN }}
 
           name: ${{ steps.version.outputs.VERSION }}
