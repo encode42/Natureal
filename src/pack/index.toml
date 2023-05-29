@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "config/paxi/datapacks/natureal.zip"
-hash = "20049f3fe2467c6627ebc229b7c89c9611b6f82aea0b47d914cbf65f0b6c25ab"
+hash = "20c05445546f739f1d4903340953ee473313b0037fcc641eec9c25148ac0c058"
 
 [[files]]
 file = "config/paxi/resourcepacks/all-the-fish.pw.toml"
@@ -651,11 +651,6 @@ hash = "2b9234ff22e5151bd371641e8e399db13f253eefb21c2020add320c548d1eced"
 metafile = true
 
 [[files]]
-file = "mods/dcintegration.pw.toml"
-hash = "34f453c20c4d2e62c95e2bf10d4f552252f0e224a7a0a6bf8b08c242b110d641"
-metafile = true
-
-[[files]]
 file = "mods/debugify.pw.toml"
 hash = "4320e91130f0fc2e97c017cdef243bdf7309647e697fe71e31f6da3ee83b5a31"
 metafile = true
@@ -828,6 +823,11 @@ metafile = true
 [[files]]
 file = "mods/fabric-api.pw.toml"
 hash = "ba1b417308ddce6d27de0b011bf57cdc83c707729194643502c46800d2d5dcf2"
+metafile = true
+
+[[files]]
+file = "mods/fabric-discord-integration.pw.toml"
+hash = "c6ded8a06d221e8512d85affa9558bf3cc992edeb5562b9a2fafd3263dbdeca9"
 metafile = true
 
 [[files]]
@@ -1103,6 +1103,11 @@ metafile = true
 [[files]]
 file = "mods/luckperms.pw.toml"
 hash = "b0e2e1590fbaf5dcef13864e22c399acea4489d8341d135d4014eb0648addbbc"
+metafile = true
+
+[[files]]
+file = "mods/magnum-torch.pw.toml"
+hash = "7e78b8085104774d9f65ab453d51f50383763f250691c739b2ee1e31fbbb9c94"
 metafile = true
 
 [[files]]
