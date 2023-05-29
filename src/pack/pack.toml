@@ -1,6 +1,6 @@
 name = "Natureal"
 author = "Encode42"
-version = "1.0.0-SNAPSHOT"
+version = "1.0.1-SNAPSHOT"
 pack-format = "packwiz:1.1.0"
 
 [index]

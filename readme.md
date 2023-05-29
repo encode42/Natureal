@@ -45,7 +45,7 @@
 **...and more!**
 
 I did not make any of the projects that make this mod pack possible.  
-Make sure to give some love to the authors of the projects listed in [/mods](https://github.com/Encode42/Natureal/tree/main/mods), [/resourcepacks](https://github.com/Encode42/Natureal/tree/main/config/paxi/resourcepacks), and [/shaderpacks](https://github.com/Encode42/Natureal/tree/main/shaderpacks)!
+Make sure to give some love to the authors of the projects listed in [/mods](https://github.com/Encode42/Natureal/tree/HEAD/src/pack/mods), [/resourcepacks](https://github.com/Encode42/Natureal/tree/HEAD/src/pack/config/paxi/resourcepacks), and [/shaderpacks](https://github.com/Encode42/Natureal/tree/HEAD/src/pack/shaderpacks)!
 
 ### ❔ FAQ
 <details>

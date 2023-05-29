@@ -85,14 +85,18 @@ jobs:
           modrinth-id: scFX3hJJ
           modrinth-token: ${{ secrets.MODRINTH_API_TOKEN }}
 
+          curseforge-id: 867527
+          curseforge-token: ${{ secrets.CURSEFORGE_API_TOKEN }}
+
           name: ${{ steps.version.outputs.VERSION }}
           version: ${{ steps.version.outputs.VERSION }}
           version-type: ${{ inputs.releaseChannel }}
           loaders: fabric
           game-versions: 1.19.2
 
-          modrinth-files: build/*.mrpack
           github-files: |
             build/*.mrpack
             build/*.cf.zip
+          modrinth-files: build/*.mrpack
+          curseforge-files: build/*.cf.zip
           changelog: ${{ steps.commits.outputs.log }}
