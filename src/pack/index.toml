@@ -198,6 +198,10 @@ file = "config/yosbr/config/restorechatlinks-client.toml"
 hash = "d995a7cd77c642279a70417ba74846a4602f2ccea864baffa6abe68a80b562c5"
 
 [[files]]
+file = "config/yosbr/config/servercore.toml"
+hash = "54e405054710094f7767cdf17138d6a52930d662a00f1cf415fc201efe64a80b"
+
+[[files]]
 file = "config/yosbr/config/sodium-extra-options.json"
 hash = "86420437c694830668924e43f8017a3a166de74f69eabd9943ad9da310ff8753"
 
