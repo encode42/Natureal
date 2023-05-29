@@ -75,7 +75,7 @@ jobs:
         with:
           github-tag: ${{ steps.version.outputs.VERSION }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          github-prerelease: ${{ inputs.releaseChannel != "release" }}
+          github-prerelease: ${{ inputs.releaseChannel != 'release' }}
 
           modrinth-id: scFX3hJJ
           modrinth-token: ${{ secrets.MODRINTH_API_TOKEN }}
