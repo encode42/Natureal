@@ -1,3 +1,5 @@
-export type ExportSide = "client" | "server";
+import type { files } from "~/util/path";
 
-export type ExportFunction = (side?: ExportSide) => Promise<void>;
+export type ExportSide = keyof typeof files["build"];
+
+export type ExportFunction = (side: ExportSide) => Promise<void>;

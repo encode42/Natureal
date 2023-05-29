@@ -47,7 +47,7 @@ jobs:
       run: pnpm install --prod
 
     - name: Build Modrinth pack
-      run: pnpm run export:modrinth
+      run: pnpm run client:modrinth
 
     - name: Upload Modrinth pack
       uses: actions/upload-artifact@v3
@@ -56,7 +56,9 @@ jobs:
         path: build/Natureal-*.mrpack
 
     - name: Build CurseForge pack
-      run: pnpm run export:curseForge
+      run: |
+        pnpm run client:curseForge
+        pnpm run server:curseForge
 
     - name: Upload CurseForge pack
       uses: actions/upload-artifact@v3

@@ -1,6 +1,6 @@
 // @ts-ignore
 import { CurseforgeV1Client } from "@xmcl/curseforge";
-import { headers } from "~/util/commonHeaders";
+import { headers } from "~/util/common/headers";
 
 import * as dotenv from "dotenv";
 dotenv.config();

@@ -1,5 +1,5 @@
-import type { PackwizFile } from "~/util/getIndex";
-import { getIndex } from "~/util/getIndex";
+import type { PackwizFile } from "~/util/packwiz/getIndex";
+import { getIndex } from "~/util/packwiz/getIndex";
 import { getModrinthProject } from "~/util/modrinth/getModrinthProject";
 import { getCurseForgeProject } from "~/util/curseForge/getCurseForgeProject";
 import { modrinth } from "~/util/modrinth/modrinthClient";

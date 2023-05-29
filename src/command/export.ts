@@ -1,7 +1,7 @@
 import type { Command } from "~/type/Command";
 import type { ExportFunction, ExportSide } from "~/type/Export";
-import { exportModrinth } from "~/export/modrinth";
-import { exportCurseForge } from "~/export/curseforge";
+import { exportModrinth } from "~/export/platform/modrinth";
+import { exportCurseForge } from "~/export/platform/curseforge";
 import { exportZip } from "~/export/zip";
 import { chalk } from "zx";
 

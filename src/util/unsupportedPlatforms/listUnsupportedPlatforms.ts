@@ -1,10 +1,9 @@
 import type { PackwizFileCredit } from "~/util/unsupportedPlatforms/getUnsupportedPlatforms";
+import type { SupportedPlatform } from "~/type/SupportedPlatform";
 import { getUnsupportedPlatforms } from "~/util/unsupportedPlatforms/getUnsupportedPlatforms";
-import { chalk } from "zx";
 
-export interface listUnsupportedPlatforms {
-    "modrinth": string,
-    "curseForge": string
+export type listUnsupportedPlatforms  = {
+    [key in SupportedPlatform]: string
 }
 
 type ListFormat = (mods: PackwizFileCredit[]) => string;
@@ -17,7 +16,7 @@ const markdownList: ListFormat = mods => {
     return mods.map(mod => `- [${mod.name}](${mod.url})`).join("\n");
 };
 
-export async function listUnsupportedPlatforms(format?: string): Promise<listUnsupportedPlatforms> {
+export async function listUnsupportedPlatforms(format?: "list" | "markdown"): Promise<listUnsupportedPlatforms> {
     const unsupportedPlatforms = await getUnsupportedPlatforms();
 
     let listFormat = basicList;

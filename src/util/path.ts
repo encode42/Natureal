@@ -1,18 +1,26 @@
-import { join, resolve, format } from "node:path";
 import { mkdir, access } from "node:fs/promises";
-import { getPackInfo } from "~/util/getPackInfo";
+import { join, resolve, format } from "node:path";
+import { homedir } from "node:os";
+import { getPackInfo } from "~/util/packwiz/getPackInfo";
 
 interface Directories {
     "build": string,
-    "pack": string
+    "pack": string,
+    "cache": string
 }
 
 interface Files {
     "build": {
-        "modrinth": string,
-        "curseForge": string,
-        "zip": string
-    },
+        "client": {
+            "modrinth": string,
+            "curseForge": string,
+            "zip": string
+        },
+        "server": {
+            "curseForge": string,
+            "zip": string
+        }
+    }
     "packwiz": {
         "pack": string,
         "index": string
@@ -21,7 +29,8 @@ interface Files {
 
 export const directories: Directories = {
     "build": resolve("build"),
-    "pack": resolve("src/pack")
+    "pack": resolve("src/pack"),
+    "cache": join(homedir(), ".cache", "natureal")
 };
 
 export const files: Files = {
@@ -30,9 +39,15 @@ export const files: Files = {
         "index": join(directories.pack, "index.toml")
     },
     "build": {
-        "modrinth": "mrpack",
-        "curseForge": "cf.zip",
-        "zip": "zip",
+        "client": {
+            "modrinth": "mrpack",
+            "curseForge": "cf.zip",
+            "zip": "zip",
+        },
+        "server": {
+            "curseForge": "SERVER.cf.zip",
+            "zip": "SERVER.zip",
+        }
     }
 };
 
@@ -48,11 +63,14 @@ export async function initPath() {
     const packInfo = await getPackInfo();
 
     // The default values define the mod pack extensions, while this loop fills in the file name
-    for (const [type, extension] of Object.entries(files.build)) {
-        files.build[type as keyof typeof files["build"]] = format({
-            "dir": directories.build,
-            "name": `${packInfo.name}-${packInfo.version}`,
-            "ext": extension
-        });
+    for (const key of Object.keys(files.build)) {
+        // todo: types
+        for (const [type, extension] of Object.entries(files.build[key])) {
+            files.build[key][type] = format({
+                "dir": directories.build,
+                "name": `${packInfo.name}-${packInfo.version}`,
+                "ext": extension
+            });
+        }
     }
 }

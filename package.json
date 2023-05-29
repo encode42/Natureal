@@ -1,11 +1,17 @@
 {
   "private": true,
   "scripts": {
-    "export": "pnpm run export:modrinth && pnpm run export:curseForge && pnpm run export:zip",
+    "client": "pnpm run client:modrinth && pnpm run client:curseForge && pnpm run client:zip",
+    "client:modrinth": "pnpm run export:modrinth --side client",
+    "client:curseForge": "pnpm run export:curseForge --side client",
+    "client:zip": "pnpm run export:zip --side client",
+    "server": "pnpm run server:curseForge && pnpm run server:zip",
+    "server:curseForge": "pnpm run export:curseForge --side server",
+    "server:zip": "pnpm run export:zip --side server",
     "export:modrinth": "tsx src/index.ts export modrinth",
     "export:curseForge": "tsx src/index.ts export curseForge",
     "export:zip": "tsx src/index.ts export zip",
-    "export:server": "pnpm run export:zip --side server"
+    "publish": "pnpm run client && pnpm run server"
   },
   "dependencies": {
     "@xmcl/curseforge": "^2.0.2",
