@@ -87,4 +87,7 @@ jobs:
           game-versions: 1.19.2
 
           modrinth-files: build/*.mrpack
+          github-files: |
+            build/*.mrpack
+            build/*.cf.zip
           changelog: ${{ steps.commits.outputs.log }}
