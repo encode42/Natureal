@@ -5,8 +5,14 @@ import { listUnsupportedPlatforms } from "~/util/unsupportedPlatforms/listUnsupp
 export const checkCommand: Command = {
     "name": "check",
     "description": "Lists the mods that aren't supported on exported platforms.",
-    "action": async () => {
-        const unsupportedPlatforms = await listUnsupportedPlatforms("markdown");
+    "options": [{
+        "name": "--format",
+        "description": "Format of the list",
+        "arguments": "<format>",
+        "default": "list"
+    }],
+    "action": async options => {
+        const unsupportedPlatforms = await listUnsupportedPlatforms(options.format);
 
         console.log(chalk.bold("Projects incompatible with Modrinth:"));
         console.log(unsupportedPlatforms.modrinth);

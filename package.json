@@ -1,6 +1,7 @@
 {
   "private": true,
   "scripts": {
+    "check": "tsx src/index.ts check",
     "client": "pnpm run client:modrinth && pnpm run client:curseForge && pnpm run client:zip",
     "client:modrinth": "pnpm run export:modrinth --side client",
     "client:curseForge": "pnpm run export:curseForge --side client",
@@ -11,7 +12,7 @@
     "export:modrinth": "tsx src/index.ts export modrinth",
     "export:curseForge": "tsx src/index.ts export curseForge",
     "export:zip": "tsx src/index.ts export zip",
-    "publish": "pnpm run client && pnpm run server"
+    "export:all": "pnpm run client && pnpm run server"
   },
   "dependencies": {
     "@xmcl/curseforge": "^2.0.2",
