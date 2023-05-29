@@ -202,6 +202,10 @@ file = "config/yosbr/config/servercore.toml"
 hash = "54e405054710094f7767cdf17138d6a52930d662a00f1cf415fc201efe64a80b"
 
 [[files]]
+file = "config/yosbr/config/sleep_tight-common.json"
+hash = "6fb1b955071518b071ba5b7d34908a20ea00a8f554b6cd103c6ca40ac712199b"
+
+[[files]]
 file = "config/yosbr/config/sodium-extra-options.json"
 hash = "86420437c694830668924e43f8017a3a166de74f69eabd9943ad9da310ff8753"
 
@@ -358,7 +362,7 @@ metafile = true
 
 [[files]]
 file = "mods/bclib.pw.toml"
-hash = "9b3ae265b25769ce00b7bbda2ac85c9aad1aa006478a2f0d54bf2c1a0441afae"
+hash = "34e884c4ef59d4fe0f0d0f8f4e07625578905ecd6d633fdda0c4541e6de48894"
 metafile = true
 
 [[files]]
@@ -688,7 +692,7 @@ metafile = true
 
 [[files]]
 file = "mods/dramatic-doors.pw.toml"
-hash = "711eaebda323ede3ff40bd08a9dba18cd06626a041bec601d9bf3ef760c19dd7"
+hash = "3169cec39eab38373bbf1789340a79316f66b50cc6e115ceb0bbf5080919bad8"
 metafile = true
 
 [[files]]
@@ -1138,7 +1142,7 @@ metafile = true
 
 [[files]]
 file = "mods/minimotd.pw.toml"
-hash = "58bd35a5b71ac2201f23586b0868b1ee3945439d9036279ed3b6990d588a4ec0"
+hash = "224b831a1cdce497428441731ebbfcbf4565b53f12225f21b90a7116e8b3c1b9"
 metafile = true
 
 [[files]]
@@ -1158,7 +1162,7 @@ metafile = true
 
 [[files]]
 file = "mods/modmenu.pw.toml"
-hash = "12b8d5b80aa61b84085c9fd34842acff0cc2e726eb477c73a625ce587ed5366d"
+hash = "be0fd8b9cd9f8a94428ea8ac5ec84f4f7bab23697236b7a2e54d8537834e0315"
 metafile = true
 
 [[files]]
@@ -1382,11 +1386,6 @@ hash = "c8115abb6e7fe5a61ee8ee9740e1f39a23d84bcca8fd1bdb590371cff6476801"
 metafile = true
 
 [[files]]
-file = "mods/sleep-sooner.pw.toml"
-hash = "23ee671b30d74164430178099d66ee1f051fe33bc4deb44cee0b422bc9b5faf6"
-metafile = true
-
-[[files]]
 file = "mods/sleep-tight.pw.toml"
 hash = "f6e752bfc7e571dd4aeb073966af0e2a16463383c6c52b47c39d341ff97dd055"
 metafile = true
@@ -1528,7 +1527,7 @@ metafile = true
 
 [[files]]
 file = "mods/vanilla-permissions.pw.toml"
-hash = "d763d2af66ce32394d9775fb10834f1f04403bdf0c0b82a3b63fd6011e3c1888"
+hash = "c4120b39239778d8e77e46eb0e77d7bcfdd9639516cf0859b2683ecffe5e0c39"
 metafile = true
 
 [[files]]
