@@ -12,22 +12,17 @@ metafile = true
 
 [[files]]
 file = "config/paxi/resourcepacks/chat+.pw.toml"
-hash = "a0fa45bc5d636a8b729fae4d9e01f890e69516453373e257d8e913a6b76e8b4a"
+hash = "fd3cfac45df4be7e884a9c8ae14b8988d668dc039c9efd5cc41ef1b388c48341"
 metafile = true
 
 [[files]]
 file = "config/paxi/resourcepacks/corrected-mob-heads.pw.toml"
-hash = "e976277f0acd5a09190a79c9b957815b03cb600904b7c8a5eace4a8f84abbe71"
-metafile = true
-
-[[files]]
-file = "config/paxi/resourcepacks/hidey-hidey-debris.pw.toml"
-hash = "6ac15defe399aee86787ba966f342eff6d92ce72e694fb065883b226148d1b39"
+hash = "f57db65d7dc61548b44d2acb485eba10b572d975d1d43d3c111f5b22a643fa37"
 metafile = true
 
 [[files]]
 file = "config/paxi/resourcepacks/villager-variety.pw.toml"
-hash = "521d2cf7f1421d0f77dcc48f9b83df03f9305bbb048c90ec4686bcd778936004"
+hash = "6da5ccd8157707c6852162347e91069e5205250ba2a7ce4e835ad314f2b5b8c2"
 metafile = true
 
 [[files]]
@@ -1724,5 +1719,5 @@ hash = "4cf7aa3202889412aab9066a0523fe82028a7c54e2bb52d378c5bd9e37855cdf"
 
 [[files]]
 file = "shaderpacks/complementary-reimagined.pw.toml"
-hash = "84caf410abcd0f6fe6f78625d67575998214e59dd58401597d851b36d8897825"
+hash = "b7fa515acb65dd4fc222886e9531665d218b028f31ef59adffba077717250034"
 metafile = true

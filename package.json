@@ -4,7 +4,8 @@
     "export": "pnpm run export:modrinth && pnpm run export:curseForge && pnpm run export:zip",
     "export:modrinth": "tsx src/index.ts export modrinth",
     "export:curseForge": "tsx src/index.ts export curseForge",
-    "export:zip": "tsx src/index.ts export zip"
+    "export:zip": "tsx src/index.ts export zip",
+    "export:server": "pnpm run export:zip --side server"
   },
   "dependencies": {
     "@xmcl/curseforge": "^2.0.2",

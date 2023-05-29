@@ -11,3 +11,7 @@ hash = "7c49e26d244d5736645ebe45beaae618a234fff5"
 [update.modrinth]
 mod-id = "sPT9u2eL"
 version = "WRelskY3"
+
+[update.curseforge]
+file-id = 3954037
+project-id = 665218

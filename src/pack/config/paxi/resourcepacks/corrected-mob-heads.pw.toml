@@ -11,3 +11,7 @@ hash = "a53f3dfc6ca2823240ce23729c2cbc9420dec160"
 [update.modrinth]
 mod-id = "HjSPiUds"
 version = "9gdTGP0O"
+
+[update.curseforge]
+file-id = 3829381
+project-id = 428227

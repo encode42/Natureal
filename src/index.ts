@@ -2,15 +2,14 @@ import type { Command } from "~/type/Command";
 import { initPath } from "~/util/path";
 import { createCommand, createOption, program } from "commander";
 import { exportCommand } from "~/command/export";
-
-import * as dotenv from "dotenv";
-dotenv.config();
+import { checkCommand } from "~/command/check";
 
 import { $ } from "zx";
 $.verbose = false;
 
 const commands: Command[] = [
-    exportCommand
+    exportCommand,
+    checkCommand
 ];
 
 async function index() {

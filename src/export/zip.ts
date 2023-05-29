@@ -1,79 +1,63 @@
 import type { ExportFunction } from "~/type/Export";
 import { join, dirname } from "node:path";
-import { writeFile, readFile } from "node:fs/promises";
-import { parse } from "toml";
-import { ModrinthV2Client } from "@xmcl/modrinth";
-// @ts-ignore
-import { CurseforgeV1Client } from "@xmcl/curseforge";
+import { writeFile } from "node:fs/promises";
 import { chalk, fetch } from "zx";
 import JSZip from "jszip";
-import { directories, files } from "~/util/path";
-
-const headers = {
-    "User-Agent": process.env.USER_AGENT ?? "Encode42/Natureal (me@encode42.dev)"
-};
+import { files } from "~/util/path";
+import { getIndex } from "~/util/getIndex";
+import { getModrinthVersion } from "~/util/modrinth/getModrinthVersion";
+import { getCurseForgeVersion } from "~/util/curseForge/getCurseForgeVersion";
+import { headers } from "~/util/commonHeaders";
 
 export const exportZip: ExportFunction = async side => {
-    const indexFile = await readFile(files.packwiz.index, {
-        "encoding": "utf-8"
-    });
-
-    const index = parse(indexFile);
-
-    const modrinth = new ModrinthV2Client({
-        headers
-    });
-    const curseForge = new CurseforgeV1Client(process.env.CURSEFORGE_API_TOKEN, {
-        headers
-    });
+    const index = await getIndex();
 
     const zip = new JSZip();
-    for (const indexFile of index.files) {
-        const content = await readFile(join(directories.pack, indexFile.file), {
-            "encoding": "utf-8"
-        });
-
-        if (!indexFile.file.endsWith(".pw.toml")) {
-            zip.file(indexFile.file, content);
+    for (const file of index.files) {
+        if ("content" in file) {
+            zip.file(file.file, file.content);
             continue;
         }
 
-        const packwizFile = await parse(content);
-
-        if ((packwizFile.side === "server" && side === "client") ||
-            (packwizFile.side === "client" && side === "server")) {
+        if ((file.pack.side === "server" && side === "client") ||
+            (file.pack.side === "client" && side === "server")) {
             continue;
         }
 
         let downloadURL: string;
-        if (packwizFile.update.modrinth) {
-            const project = await modrinth.getProjectVersion(packwizFile.update.modrinth.version);
+        if (file.pack.update?.modrinth) {
+            const version = await getModrinthVersion(file.pack.update.modrinth.version);
 
             // Find file that matches provide sha1, otherwise select the primary or first file
             let matchedFileURL: string | undefined;
-            let primaryFileURL: string = project.files[0].url;
-            for (const file of project.files) {
+            let primaryFileURL: string = version.files[0].url;
+            for (const modrinthFile of version.files) {
                 if (matchedFileURL && primaryFileURL) {
                     break;
                 }
 
-                if (file.hashes.sha1 === packwizFile.sha1) {
-                    matchedFileURL = file.url;
+                let hash = modrinthFile.hashes.sha1;
+                if (file.pack.download["hash-format"] in modrinthFile.hashes) {
+                    hash = modrinthFile.hashes[file.pack.download["hash-format"]];
+                }
+
+                if (hash === file.pack.download.hash) {
+                    matchedFileURL = modrinthFile.url;
                 }
 
                 // @ts-ignore
-                if (file.primary) {
-                    primaryFileURL = file.url;
+                if (modrinthFile.primary) {
+                    primaryFileURL = modrinthFile.url;
                 }
             }
 
             downloadURL = matchedFileURL ?? primaryFileURL;
-        } else if (packwizFile.update.curseforge) {
-            const project = await curseForge.getModFile(packwizFile.update.curseforge["project-id"], packwizFile.update.curseforge["file-id"]);
+        } else if (file.pack.update?.curseforge) {
+            const project = await getCurseForgeVersion(file.pack.update.curseforge["project-id"], file.pack.update.curseforge["file-id"]);
 
             downloadURL = project.downloadUrl;
         } else {
-            console.error(chalk.red(`Processing of ${packwizFile.name} failed!`));
+            console.error(chalk.red(`Processing of ${file.pack.name} failed!`));
             throw "No update information from either Modrinth or CurseForge was found.";
         }
 
@@ -87,7 +71,7 @@ export const exportZip: ExportFunction = async side => {
         }
 
         const data = await request.arrayBuffer();
-        zip.file(join(dirname(indexFile.file), packwizFile.filename), data);
+        zip.file(join(dirname(file.file), file.pack.filename), data);
     }
 
     await writeFile(files.build.zip, await zip.generateAsync({ "type": "nodebuffer" }));
