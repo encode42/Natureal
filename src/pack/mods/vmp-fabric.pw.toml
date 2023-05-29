@@ -8,9 +8,10 @@ hash = "d6f03e8e72e08d5bc034740cc0e34bb05959fefb"
 mode = "metadata:curseforge"
 
 [update]
-[update.curseforge]
-file-id = 4468465
-project-id = 552542
 [update.modrinth]
 mod-id = "wnEe9KBa"
 version = "hg1CfB4u"
+
+[update.curseforge]
+file-id = 4468465
+project-id = 552542
