@@ -31,7 +31,7 @@ jobs:
       - name: Install packwiz
         run: go install github.com/packwiz/packwiz@latest
 
-      - name: Setup Packwiz cache
+      - name: Set up Packwiz cache
         uses: actions/cache@v3
         with:
           path: ~/.cache/packwiz/cache/
