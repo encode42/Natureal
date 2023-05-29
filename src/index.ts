@@ -5,7 +5,7 @@ import { exportCommand } from "~/command/export";
 import { checkCommand } from "~/command/check";
 
 import { $ } from "zx";
-$.verbose = false;
+//$.verbose = false;
 
 const commands: Command[] = [
     exportCommand,
