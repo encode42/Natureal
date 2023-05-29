@@ -83,10 +83,10 @@ jobs:
           github-prerelease: ${{ inputs.releaseChannel != 'release' }}
 
           modrinth-id: scFX3hJJ
-          modrinth-token: ${{ secrets.MODRINTH_API_TOKEN }}
+          modrinth-token: ${{ secrets.MODRINTH_UPLOAD_TOKEN }}
 
           curseforge-id: 867551
-          curseforge-token: ${{ secrets.CURSEFORGE_API_TOKEN }}
+          curseforge-token: ${{ secrets.CURSEFORGE_UPLOAD_TOKEN }}
 
           name: ${{ steps.version.outputs.VERSION }}
           version: ${{ steps.version.outputs.VERSION }}
