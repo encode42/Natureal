@@ -1,0 +1,13 @@
+name = "RainControl"
+filename = "rain-control-1.1.1.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/z4RNRF0D/versions/WGwhlhGo/rain-control-1.1.1.jar"
+hash-format = "sha1"
+hash = "6eedc124c01f1b7aa85f69f5449ce67943413b25"
+
+[update]
+[update.modrinth]
+mod-id = "z4RNRF0D"
+version = "WGwhlhGo"
