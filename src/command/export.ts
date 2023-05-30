@@ -24,7 +24,7 @@ export const exportCommand: Command = {
     "action": async (platform, options) => {
         switch (platform) {
             case "modrinth": {
-                await exportWrapper("Modrinth", exportModrinth, options.side);
+                await exportWrapper("Modrinth", exportModrinth, "both");
                 break;
             }
 
