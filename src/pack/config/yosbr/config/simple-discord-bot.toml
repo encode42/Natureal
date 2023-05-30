@@ -1,0 +1,197 @@
+
+#General Mod Config
+[general]
+	#Should the bot be enabled or not
+	enabled = false
+	#Should debug logging be enabled? WARNING: THIS CAN SPAM YOUR LOG!
+	debugging = false
+	#Should the bot be allowed to whitelist/un-whitelist players. Whitelisting needs to be enabled on your server as well
+	whitelisting = false
+	#Should the bot be allowed to whitelist/un-whitelist players in OFFLINE mode. Whitelisting needs to be enabled on your server as well
+	offlinewhitelist = false
+	#Automatically link Minecraft and Discord Accounts when a user is whitelisted
+	linkedWhitelist = false
+	#Should only admins be allowed to whitelist players
+	onlyAdminsWhitelist = false
+	#If a role ID (or name) is defined here, it will be assigned to players when they are whitelisted
+	autoWhitelistRole = ""
+	#If a role ID (or name) is defined here, it will be assigned to players when their MC and Discord accounts are linked
+	linkedRole = ""
+	#Should the /discord command be enabled in game
+	inviteCommandEnabled = false
+	#Discord Invite Link used by the in-game invite command
+	inviteLink = ""
+	#Internal version control. DO NOT TOUCH!
+	configVersion = 24
+
+#Config specific to the discord bot
+[botConfig]
+	#The Token of the Bot to use. KEEP THIS PRIVATE. See https://readme.firstdarkdev.xyz/simple-discord-link/initial-setup/ to find this
+	botToken = ""
+	#How quickly the bot status should update
+	activityUpdateInterval = 0
+	#If a role ID (or name) is defined here, only members with this role can use Staff Functions. Otherwise, it defaults back to admin/kick perms
+	staffRole = ""
+	#Should the bot use / commands. NOTE: THIS MAY TAKE UP TO 24 HOURS TO SHOW UP IN YOUR DISCORD
+	slashCommands = false
+	#The prefix to use for bot commands. Example: ~players. THIS HAS NO EFFECT WHEN USING SLASH COMMANDS
+	# - WARNING: TEXT COMMANDS HAVE BEEN DEPRECATED, USE SLASH COMMANDS INSTEAD!!
+	botPrefix = "~"
+	#Do not add Playing. A status to display on the bot. You can use %players% and %maxplayers% to show the number of players on the server
+	botStatus = "%players%"
+	#The type of the status displayed on the bot. Valid entries are: PLAYING, STREAMING, WATCHING, LISTENING
+	botStatusType = "WATCHING"
+	#The URL that will be used when the "botStatusType" is set to "STREAMING", required to display as "streaming".
+	botStatusStreamingURL = "https://twitch.tv/twitch"
+	#Should the bot update the topic of your chat channel automatically
+	doTopicUpdates = false
+	#A topic for the Chat Relay channel. You can use %player%, %maxplayers%, %uptime% or just leave it empty.
+	channelTopic = "Playing Minecraft with %players%/%maxplayers% people | Uptime: %uptime%"
+
+#Config relating to the discord channels to use with the mod
+[channels]
+	#The ID of the channel to post in and relay messages from. This is still needed, even in webhook mode
+	chatChannelID = 776516622071496717
+	#If this ID is set, event messages will be posted in this channel instead of the chat channel
+	eventsChannelID = 0
+	#If this ID is set, console messages sent after the bot started will be relayed here, and you can execute minecraft commands here
+	consoleChannelID = 0
+
+#Webhook Config
+[webhooks]
+	#Should webhook messages be used
+	enabled = true
+	#The URL of the channel webhook to use for Chat Messages
+	chatWebhook = ""
+	#The URL of the channel webhook to use for Server Messages
+	eventsWebhook = ""
+	#The URL of the channel webhook to use for Console Messages
+	consoleWebhook = ""
+	#A DIRECT link to an image to use as the avatar for server messages. Also used for embeds
+	serverAvatar = "https://cdn.jsdelivr.net/gh/Encode42/Natureal@1.1.0/.github/asset/badge.png"
+	#The name to display for Server messages when using Webhooks
+	serverName = "Natureal"
+
+#Chat Config
+[chat]
+	#The type of image to use as the player icon in messages. Valid entries are: AVATAR, HEAD, BODY, COMBO
+	playerAvatarType = "AVATAR"
+	#Prefix to add to Minecraft when a message is relayed from Discord. Supports MC formatting. Use %user% for the Discord Username
+	mcPrefix = "§8[*]§r <%user%> "
+	#Should messages from bots be relayed
+	ignoreBots = true
+	#Should SERVER STARTING messages be shown
+	serverStarting = false
+	#Should SERVER STARTED messages be shown
+	serverStarted = true
+	#Should SERVER STOPPING messages be shown
+	serverStopping = false
+	#Should SERVER STOPPED messages be shown
+	serverStopped = true
+	#Should the chat be relayed
+	playerMessages = true
+	#Should Join and Leave messages be posted
+	joinAndLeaveMessages = true
+	#Should Advancement messages be posted
+	advancementMessages = true
+	#Should Death Announcements be posted
+	deathMessages = true
+	#Should Messages from the /say command be posted
+	sendSayCommand = true
+	#Should commands be posted to discord
+	broadcastCommands = false
+	#Commands that should not be broadcasted to discord
+	ignoredCommands = ["particle", "login"]
+
+#Change the contents of certain event messages
+[messages]
+	#Convert Discord to MC, and MC to Discord Formatting
+	formatting = true
+	#Should console messages be sent to the Console Channel
+	sendConsoleMessages = true
+	#Server Starting Message
+	serverStarting = "Server starting..."
+	#Server Started Message
+	serverStarted = "Server started."
+	#Server Stopping Message
+	serverStopping = "Server stopping..."
+	#Server Stopped Message
+	serverStopped = "Server stopped."
+	#Player Joined Message. Use %player% to display the player name
+	playerJoined = "%player% joined the game"
+	#Player Left Message. Use %player% to display the player name
+	playerLeft = "%player% left the game"
+	#Achievement Messages. Available variables: %player%, %title%, %description%
+	achievements = "%player% has made the advancement [%title%]\n> %description%"
+	#Chat Messages. Available variables: %player%, %message%
+	chat = "%message%"
+	#Command Messages. Available variables: %player%, %command%
+	commands = "%player% executed command %command%"
+	#Should messages sent with TellRaw be sent to discord as a chat? (Experimental)
+	relayTellRaw = true
+	#Should the entire command executed be relayed to discord, or only the name of the command
+	relayFullCommands = false
+	#The message to show when someone uses /discord command. You can use %inviteurl%
+	inviteMessage = "%inviteurl%"
+
+#Change in which channel messages appear
+[messageDestinations]
+
+	#Control where CHAT messages are delivered
+	[messageDestinations.chat]
+		#The Channel the message will be delivered to. Valid entries are CHAT, EVENT, CONSOLE
+		channel = "CHAT"
+		#Should the message be sent using EMBED style messages
+		useEmbed = false
+
+	#Control where START/STOP messages are delivered
+	[messageDestinations.startStop]
+		#The Channel the message will be delivered to. Valid entries are CHAT, EVENT, CONSOLE
+		channel = "EVENT"
+		#Should the message be sent using EMBED style messages
+		useEmbed = false
+
+	#Control where JOIN/LEAVE messages are delivered
+	[messageDestinations.joinLeave]
+		#The Channel the message will be delivered to. Valid entries are CHAT, EVENT, CONSOLE
+		channel = "EVENT"
+		#Should the message be sent using EMBED style messages
+		useEmbed = false
+
+	#Control where ADVANCEMENT messages are delivered
+	[messageDestinations.advancements]
+		#The Channel the message will be delivered to. Valid entries are CHAT, EVENT, CONSOLE
+		channel = "EVENT"
+		#Should the message be sent using EMBED style messages
+		useEmbed = false
+
+	#Control where DEATH messages are delivered
+	[messageDestinations.death]
+		#The Channel the message will be delivered to. Valid entries are CHAT, EVENT, CONSOLE
+		channel = "EVENT"
+		#Should the message be sent using EMBED style messages
+		useEmbed = false
+
+	#Control where COMMAND messages are delivered
+	[messageDestinations.commands]
+		#The Channel the message will be delivered to. Valid entries are CHAT, EVENT, CONSOLE
+		channel = "EVENT"
+		#Should the message be sent using EMBED style messages
+		useEmbed = false
+
+#Enable or Disable certain bot commands
+[botCommands]
+	#Allow members to link their MC and Discord accounts
+	accountLinking = false
+	#Enable/Disable the Player List command
+	allowPlayerList = false
+	#Enable/Disable the Server Status command
+	allowServerStatus = false
+
+#Execute Minecraft commands in Discord
+[linkedCommands]
+	#Should linked commands be enabled
+	enabled = false
+	#Commands to be linked
+	commands = []
+
