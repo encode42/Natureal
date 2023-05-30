@@ -691,7 +691,7 @@ metafile = true
 
 [[files]]
 file = "mods/double-doors.pw.toml"
-hash = "86d1e70cd9929f635699e74ba0df0c95a3050a70d25887b96650a0de893295c2"
+hash = "deeb8780005ad6707f51a119b15cf807e006cd5b1a1d4810cfd1024f0e870bc0"
 metafile = true
 
 [[files]]
