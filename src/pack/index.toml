@@ -636,6 +636,11 @@ hash = "29e33b643ff22529498f0da752aaacf38bd69660ce0c838df01dc011e0d86f0b"
 metafile = true
 
 [[files]]
+file = "mods/crops-love-rain.pw.toml"
+hash = "fc73f805d304f865e27c6d9437215a080d234c2a71626abff4b58b818999aa37"
+metafile = true
+
+[[files]]
 file = "mods/croptopia.pw.toml"
 hash = "3318c70374f860b9b2ab3699621a7ace4a199dd63f06d3b5c6892067ec5f269d"
 metafile = true
@@ -961,6 +966,11 @@ hash = "224d91449a67e2ad7f53c9df842b7cbb92c47abe4a10d212c6a6c06f4f971742"
 metafile = true
 
 [[files]]
+file = "mods/head-in-the-clouds.pw.toml"
+hash = "e6ce0e18c7f0d5e64db85e1fc24c0f41801e688481ad040c2e4037cbbfa65007"
+metafile = true
+
+[[files]]
 file = "mods/hex-casting.pw.toml"
 hash = "1b536bf3d553b5b33645713afb7bf97271c9424c05d7bd07dbf7f2d7a723232e"
 metafile = true
@@ -1073,6 +1083,11 @@ metafile = true
 [[files]]
 file = "mods/legendary-tooltips.pw.toml"
 hash = "f4b840931db727a88303df4d1f02fc3fd8b0b008f67480d3b832c60c05a8de9b"
+metafile = true
+
+[[files]]
+file = "mods/letsjeb.pw.toml"
+hash = "1df557ce68ecf2a1ab64c5525557f58c3083f57a00fa843907f635b5d113aeb6"
 metafile = true
 
 [[files]]
@@ -1313,6 +1328,11 @@ metafile = true
 [[files]]
 file = "mods/qu-enchantments.pw.toml"
 hash = "31765337d6bfbe7bb4bd029570e8d3228d18786bf453f272886dc65760aebab2"
+metafile = true
+
+[[files]]
+file = "mods/raincontrol.pw.toml"
+hash = "8e7f5d7d6a0fe926e4a0c17de2c4449ff044ef81e4a7ae9815347e01cbd1e9fa"
 metafile = true
 
 [[files]]
