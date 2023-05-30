@@ -1,5 +1,5 @@
-import type { ExportFunction, ExportSide } from "~/type/Export";
-import type { SupportedPlatform } from "~/type/SupportedPlatform";
+import type { ExportFunction } from "~/type/Export";
+import type { SupportedPlatform, SupportedSide } from "~/type/Supported";
 import { listUnsupportedPlatforms } from "~/util/unsupportedPlatforms/listUnsupportedPlatforms";
 import { cd } from "zx";
 import { directories, files } from "~/util/path";
@@ -10,11 +10,15 @@ import { zipOptions } from "~/util/common/zipOptions";
 
 export interface PlatformWrapperOptions {
     "platform"?: SupportedPlatform
-    "side": ExportSide,
+    "side": SupportedSide,
     "runner": ExportFunction
 }
 
 export async function platformWrapper({ runner, platform, side }: PlatformWrapperOptions) {
+    if (side === "both") {
+        side = "client";
+    }
+
     cd(directories.pack);
     await runner(side);
 
@@ -22,9 +26,12 @@ export async function platformWrapper({ runner, platform, side }: PlatformWrappe
         return;
     }
 
-    const unsupportedPlatforms = await listUnsupportedPlatforms("markdown");
+    const unsupportedPlatforms = await listUnsupportedPlatforms({
+        "format": "markdown",
+        side
+    });
 
-    const packFile = readFile(files.build.client[platform]);
+    const packFile = readFile(files.build[side][platform]);
     const pack = await loadAsync(packFile);
 
     pack.file("external.md", unsupportedPlatforms[platform].toString());

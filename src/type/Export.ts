@@ -1,5 +1,3 @@
-import type { files } from "~/util/path";
+import type { SupportedSide } from "~/type/Supported";
 
-export type ExportSide = keyof typeof files["build"];
-
-export type ExportFunction = (side: ExportSide) => Promise<void>;
+export type ExportFunction = (side: SupportedSide) => Promise<void>;

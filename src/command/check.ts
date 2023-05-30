@@ -10,9 +10,17 @@ export const checkCommand: Command = {
         "description": "Format of the list",
         "arguments": "<format>",
         "default": "list"
+    }, {
+        "name": "--side",
+        "description": "Whether to check for client or server mods.",
+        "arguments": "<side>",
+        "default": "both"
     }],
     "action": async options => {
-        const unsupportedPlatforms = await listUnsupportedPlatforms(options.format);
+        const unsupportedPlatforms = await listUnsupportedPlatforms({
+            "format": options.format,
+            "side": options.side
+        });
 
         console.log(chalk.bold("Projects incompatible with Modrinth:"));
         console.log(unsupportedPlatforms.modrinth);

@@ -21,8 +21,7 @@ export const exportZip: ExportFunction = async side => {
             continue;
         }
 
-        if ((file.pack.side === "server" && side === "client") ||
-            (file.pack.side === "client" && side === "server")) {
+        if (file.pack.side !== "both" && file.pack.side !== side) {
             continue;
         }
 
