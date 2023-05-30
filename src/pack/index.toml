@@ -30,10 +30,6 @@ hash = "9189841544fde9f6f887a6011fdb4bb6dd5f247feffa34b79f9a3602d7240cd5"
 metafile = true
 
 [[files]]
-file = "config/yosbr/config/Discord-Integration.toml"
-hash = "fcbc11d468d5c6262115821fcf2afffbf10973cc0960aa2e014b78abba452057"
-
-[[files]]
 file = "config/yosbr/config/MiniMOTD/icons/natureal.png"
 hash = "168e13de8cb15d6a23cf4d35d3d41f14954a56c020e3a32fa1e9b5baae0dbd65"
 
@@ -44,6 +40,10 @@ hash = "2015b2bd223aa9265dca55dc6d1ca383d9a7563c7a931607c3ee3b5251d783b4"
 [[files]]
 file = "config/yosbr/config/MiniMOTD/plugin_settings.conf"
 hash = "34582d0fff848a014c8868a109dc2c7793160dacbcbd556414b1ba41a6339c35"
+
+[[files]]
+file = "config/yosbr/config/RainControl/config.acfg"
+hash = "56ce209a106e6bbcf723dbef90cb6d4cc4e27689e90a84d92cdc2993882553d8"
 
 [[files]]
 file = "config/yosbr/config/ae2/client.json"
@@ -162,6 +162,10 @@ file = "config/yosbr/config/limitedspawners.toml"
 hash = "e22d2b62b50a3e81031bdf8bbfc46ade800299fb7228f640f7d008cad0ebc990"
 
 [[files]]
+file = "config/yosbr/config/magnumtorch-server.toml"
+hash = "d93cafe56469edf3b5e4a6e0531f6a7659fc2fc6f813481f49edb966901018ca"
+
+[[files]]
 file = "config/yosbr/config/map_atlases.json5"
 hash = "7dd4378a06f46494fd20abc7eccc9fff24fd51eb961803d929ca88b5776fc3da"
 
@@ -194,12 +198,12 @@ file = "config/yosbr/config/presencefootsteps/userconfig.json"
 hash = "0a69ae6887e63335930f355157e67dcf82789108bafce30ba5f4fed764bbc69f"
 
 [[files]]
-file = "config/yosbr/config/restorechatlinks-client.toml"
-hash = "d995a7cd77c642279a70417ba74846a4602f2ccea864baffa6abe68a80b562c5"
-
-[[files]]
 file = "config/yosbr/config/servercore.toml"
 hash = "54e405054710094f7767cdf17138d6a52930d662a00f1cf415fc201efe64a80b"
+
+[[files]]
+file = "config/yosbr/config/simple-discord-bot.toml"
+hash = "8b86a06c45adda1b66d6584272f86a9d63602bf084250a5894f581c27831166f"
 
 [[files]]
 file = "config/yosbr/config/sleep_tight-common.json"
@@ -1356,11 +1360,6 @@ hash = "27a48d3972a7534db3d6dacb875ae9978cbe477c1c716f5657fe14561962b271"
 metafile = true
 
 [[files]]
-file = "mods/restore-chat-links.pw.toml"
-hash = "97eec69a4c75700af4e6d8ae6f8dcdcb317cb615e27f973776f652931d27f5b6"
-metafile = true
-
-[[files]]
 file = "mods/revelationary.pw.toml"
 hash = "687b7877ccc0b2d4cd4f2a2c231da30e57e3018b645d23fc5dfd8dd41c748234"
 metafile = true
@@ -1383,6 +1382,11 @@ metafile = true
 [[files]]
 file = "mods/saplanting.pw.toml"
 hash = "6160d795d4c48b02f48ab63dce24aa3253947cdfc7264ca39d6a08476ef2fe71"
+metafile = true
+
+[[files]]
+file = "mods/sdlink.pw.toml"
+hash = "d24aa77c8cab029412aea56b08154c0ba37befe0db607fb78284379e8e48b90b"
 metafile = true
 
 [[files]]

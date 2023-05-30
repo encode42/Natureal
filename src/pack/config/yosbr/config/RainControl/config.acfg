@@ -1,0 +1,14 @@
+# The minimum and maximum amount of time you want clear weather to last, in ticks. Defaults are set to vanilla
+min_clear_weather=72000
+max_clear_weather=744000
+# The minimum and maximum amount of time you want rainy weather to last, in ticks. Defaults are set to vanilla
+min_rainy_weather=600
+max_rainy_weather=72000
+# The minimum and maximum amount of time you want thunder to go on for, in ticks. Defaults are set to vanilla
+min_thunder_weather=1200
+max_thunder_weather=24000
+# The minimum and maximum amount of time you want between thunder storms, in ticks. Defaults are set to vanilla
+# Note: The maximum you pick will not necessarily be the in-game maximum, as thunder and rain have to coincide for the game to allow thunder
+# This means that the chance of a thunderstorm also relies on rain, so if you set the time between rain to be a high value, you might want to lower these values
+min_clear_thunder=12000
+max_clear_thunder=180000
