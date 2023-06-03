@@ -62,6 +62,10 @@ file = "config/yosbr/config/areas.json5"
 hash = "3e2b8e3c3e8dc7ab8db1a5e7d51098279c93dcbde5bffcc0731c55333071c593"
 
 [[files]]
+file = "config/yosbr/config/artifacts/worldgen.toml"
+hash = "d8eeaf81fef8dc0894ea352eba5b25acff2dff450a9df78e7fb120f29700db12"
+
+[[files]]
 file = "config/yosbr/config/audioplayer/audioplayer-server.properties"
 hash = "0f353e9d8df6b4a65872a6d833ed90fe8e0b230824bdc05618d9c5349302746e"
 
@@ -960,6 +964,11 @@ hash = "74ddf51eaf15a227508661bda6fe8992f01048bfb1d446d8daa4e0332a03b5fc"
 metafile = true
 
 [[files]]
+file = "mods/gotta-go-fast-fabric.pw.toml"
+hash = "1f202c03d7e9bb50f0c548336fe47c6f37d8f4d39907c243cab782de87dccc25"
+metafile = true
+
+[[files]]
 file = "mods/grappling-hook-mod-fabric.pw.toml"
 hash = "8783d4003c916f7004e8ac99fa4b4cbc1378c38cfc4dcede1f52c24af6b3e184"
 metafile = true
@@ -1267,6 +1276,11 @@ metafile = true
 [[files]]
 file = "mods/owo-lib.pw.toml"
 hash = "fae714be83ac7dfdc2b8f36796deb83ff89cd5a8b181cec0397ff7777cbe94d5"
+metafile = true
+
+[[files]]
+file = "mods/pack-it-up.pw.toml"
+hash = "8edf1a22b3afe12f55926d15c06bbac8b1e2a17e5af6217538be5672002dd036"
 metafile = true
 
 [[files]]
@@ -1602,11 +1616,6 @@ metafile = true
 [[files]]
 file = "mods/variant-weapons-and-tools.pw.toml"
 hash = "4c72da5672daa0af120a09f49953628b53d6d616c5ae36cf297f6d3654d11b85"
-metafile = true
-
-[[files]]
-file = "mods/variety-aquatic.pw.toml"
-hash = "69876bc1cb0b60970a28b6e875f2bbcbda8b3464a12a69c8ab5d81a633fd71c3"
 metafile = true
 
 [[files]]
