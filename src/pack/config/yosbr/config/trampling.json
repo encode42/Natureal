@@ -1,0 +1,12 @@
+{
+  "cropBuff": {
+    "leatherBoots": true,
+    "featherFalling": true,
+    "sneaking": true
+  },
+  "cropDebuff": {
+    "blockBreakingChance": 0,
+    "stunnedOnTrampleChance": 75,
+    "unstunSuccessChance": 25
+  }
+}

@@ -1,0 +1,17 @@
+name = "Trampling"
+filename = "trampling-1.1+1.19.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/v0Og01bf/versions/fpdtJlvt/trampling-1.1%2B1.19.jar"
+hash-format = "sha1"
+hash = "0d55f36bc4520d5621c3865454f003813f489f32"
+
+[update]
+[update.modrinth]
+mod-id = "v0Og01bf"
+version = "fpdtJlvt"
+
+[update.curseforge]
+file-id = 3955403
+project-id = 559038
