@@ -1,0 +1,17 @@
+name = "Spectrum Jetpacks"
+filename = "spectrum-jetpacks-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/iXT7GFmP/versions/UuIquUiL/spectrum-jetpacks-1.0.0.jar"
+hash-format = "sha1"
+hash = "b67a83ec5bff8c0dbc8b97e61e3fa5ac350e8dea"
+
+[update]
+[update.modrinth]
+mod-id = "iXT7GFmP"
+version = "UuIquUiL"
+
+[update.curseforge]
+file-id = 4505285
+project-id = 824498
