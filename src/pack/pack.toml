@@ -1,12 +1,12 @@
 name = "Natureal"
 author = "Encode42"
-version = "1.1.2-SNAPSHOT"
+version = "2.0.0-SNAPSHOT"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "09c4d3f734ad88afcfe2610b9c96f9357910ba862dd4fecc25c6fa19a92dc7b0"
+hash = "0d94acff381a5a323c6d3f70a70629ffe944055c81388b5a2279075253525c80"
 
 [versions]
 fabric = "0.14.19"
