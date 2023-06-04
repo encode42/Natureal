@@ -1,0 +1,13 @@
+name = "More Explosives"
+filename = "more-explosives-mod-beta_0.2.2_mc_1.19.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/GEgw8gIN/versions/Sx4aCeNN/more-explosives-mod-beta_0.2.2_mc_1.19.2.jar"
+hash-format = "sha1"
+hash = "2e5d0b37d59e227a6d514d171c8688a46f4a1985"
+
+[update]
+[update.modrinth]
+mod-id = "GEgw8gIN"
+version = "Sx4aCeNN"
