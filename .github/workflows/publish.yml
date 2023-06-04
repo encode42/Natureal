@@ -3,6 +3,11 @@ name: Publish
 on:
   workflow_dispatch:
     inputs:
+      name:
+        description: "Name of the update."
+        type: string
+        required: true
+
       releaseChannel:
         description: "Release channel to release the mod pack in."
         type: choice
@@ -88,7 +93,7 @@ jobs:
           #curseforge-id: 867551
           #curseforge-token: ${{ secrets.CURSEFORGE_UPLOAD_TOKEN }}
 
-          name: ${{ steps.version.outputs.VERSION }}
+          name: ${{ inputs.name != '' && inputs.name || steps.version.outputs.VERSION }}
           version: ${{ steps.version.outputs.VERSION }}
           version-type: ${{ inputs.releaseChannel }}
           loaders: fabric
