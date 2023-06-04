@@ -1,0 +1,17 @@
+name = "Overworld Quartz ore"
+filename = "OverworldQuartzOre-fabric-1.19.2-1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/QUssy0TY/versions/3DykRd7R/OverworldQuartzOre-fabric-1.19.2-1.jar"
+hash-format = "sha1"
+hash = "4bfbfc534d2638e6272abc0a6c0f9ec62eb582bc"
+
+[update]
+[update.modrinth]
+mod-id = "QUssy0TY"
+version = "3DykRd7R"
+
+[update.curseforge]
+file-id = 4554675
+project-id = 866588
