@@ -1,0 +1,17 @@
+name = "Warrior Rage"
+filename = "warrior-rage-1.19.2-fabric-1.0.3.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/1BGsoydA/versions/uYPK5LNR/warrior-rage-1.19.2-fabric-1.0.3.jar"
+hash-format = "sha1"
+hash = "7a93b6009d1a7dd75a086951409f917e78b46f54"
+
+[update]
+[update.modrinth]
+mod-id = "1BGsoydA"
+version = "uYPK5LNR"
+
+[update.curseforge]
+file-id = 4562132
+project-id = 631764
