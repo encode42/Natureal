@@ -1,0 +1,17 @@
+name = "All-sided blocks"
+filename = "allsidedblocks-1.0.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/f5eFgmkx/versions/BnpazJFh/allsidedblocks-1.0.1.jar"
+hash-format = "sha1"
+hash = "07af60d9c4cf04901d6da03eee983ed221d081fd"
+
+[update]
+[update.modrinth]
+mod-id = "f5eFgmkx"
+version = "BnpazJFh"
+
+[update.curseforge]
+file-id = 4096610
+project-id = 701579
