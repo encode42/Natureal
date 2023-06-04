@@ -1,0 +1,17 @@
+name = "Sprinklerz"
+filename = "sprinklerz-0.3.2_fabric.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/x47uJ7Ay/versions/5frh0TaZ/sprinklerz-0.3.2_fabric.jar"
+hash-format = "sha1"
+hash = "18ac44a2f92f76c7e68ca79fd079e6a09ba3f6e1"
+
+[update]
+[update.modrinth]
+mod-id = "x47uJ7Ay"
+version = "5frh0TaZ"
+
+[update.curseforge]
+file-id = 4559969
+project-id = 863479
