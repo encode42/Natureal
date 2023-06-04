@@ -1,0 +1,17 @@
+name = "SimpleBroadcast"
+filename = "SimpleBroadcast-0.2.0.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/ijqqUY8R/versions/FR5EwUGf/SimpleBroadcast-0.2.0.jar"
+hash-format = "sha1"
+hash = "ea52672516884bba6126c07b20610642eaa76944"
+
+[update]
+[update.modrinth]
+mod-id = "ijqqUY8R"
+version = "FR5EwUGf"
+
+[update.curseforge]
+file-id = 4557796
+project-id = 859606
