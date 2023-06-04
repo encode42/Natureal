@@ -1,0 +1,17 @@
+name = "VanitySlots"
+filename = "VanitySlots-1.2.8.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/YTVu0oG8/versions/CDWOxd3v/VanitySlots-1.2.8.jar"
+hash-format = "sha1"
+hash = "33cc0cf329aa529a5c5dbe07bee1fa959842f1c4"
+
+[update]
+[update.modrinth]
+mod-id = "YTVu0oG8"
+version = "CDWOxd3v"
+
+[update.curseforge]
+file-id = 4556201
+project-id = 570109
