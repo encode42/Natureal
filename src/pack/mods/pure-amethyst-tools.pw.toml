@@ -1,0 +1,17 @@
+name = "Pure Amethyst Tools"
+filename = "PureAmethystTools-v1.0.0-1.19.2-Fabric.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/2HP3PTXF/versions/SEg4Gilt/PureAmethystTools-v1.0.0-1.19.2-Fabric.jar"
+hash-format = "sha1"
+hash = "63890cdc34831e189d76176c1facf871759b2f0a"
+
+[update]
+[update.modrinth]
+mod-id = "2HP3PTXF"
+version = "SEg4Gilt"
+
+[update.curseforge]
+file-id = 4494395
+project-id = 851503

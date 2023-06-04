@@ -1,0 +1,17 @@
+name = "Rose Gold Equipment"
+filename = "rosegoldequipment-0.5.0-1.19.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/ZpZffQVs/versions/RjwKIc4H/rosegoldequipment-0.5.0-1.19.2.jar"
+hash-format = "sha1"
+hash = "4ce5e112f67d96d923568c05b2fe79e12473cd33"
+
+[update]
+[update.modrinth]
+mod-id = "ZpZffQVs"
+version = "RjwKIc4H"
+
+[update.curseforge]
+file-id = 4556524
+project-id = 866610
